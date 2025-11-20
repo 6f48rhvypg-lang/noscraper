@@ -171,38 +171,64 @@ if not is_search_mode:
         
         if st.button("👇 Mehr Releases laden"):
             if has_more_local_data:
-                # Fall A: Wir haben die Daten schon, zeigen nur mehr an
+                # Fall A: Wir haben die Daten schon lokal
                 st.session_state.page_size += 12
                 st.rerun()
             else:
-                # Fall B: Wir müssen neu scrapen
-                with st.spinner("Lade ältere Releases direkt von Nodata.tv..."):
-                    try:
-                        # Nächste Seite berechnen
-                        next_page = st.session_state.current_scrape_page + 1
+                # Fall B: Deep Search (Live Scraping)
+                # Wir nutzen st.status für besseres Feedback
+                with st.status("Durchsuche Nodata-Archiv nach älteren Releases...", expanded=True) as status:
+                    
+                    found_new_items = 0
+                    attempts = 0
+                    max_attempts = 5 # Sicherheitsbremse: Maximal 5 Seiten tief suchen pro Klick
+                    
+                    # Loop: Suche solange, bis wir 12 neue Items haben oder 5 Seiten durchsucht haben
+                    while found_new_items < 12 and attempts < max_attempts:
+                        attempts += 1
+                        current_page = st.session_state.current_scrape_page + 1
                         
-                        # Live Scraping starten (1 Seite)
-                        new_items = scrape_nodata(pages=1, start_page=next_page)
+                        status.write(f"🔍 Prüfe Seite {current_page} auf Nodata.tv...")
                         
-                        if new_items:
-                            # Duplikate vermeiden
+                        try:
+                            # Scrape genau EINE Seite
+                            scraped_items = scrape_nodata(pages=1, start_page=current_page)
+                            
+                            if not scraped_items:
+                                status.update(label="Ende des Archivs erreicht.", state="error")
+                                break
+                                
+                            # Prüfen: Was davon ist wirklich neu?
                             existing_ids = {item['id'] for item in st.session_state.all_releases}
-                            added_count = 0
-                            for item in new_items:
+                            real_new_items = []
+                            
+                            for item in scraped_items:
                                 if item['id'] not in existing_ids:
-                                    st.session_state.all_releases.append(item)
-                                    added_count += 1
+                                    real_new_items.append(item)
                             
-                            # Status aktualisieren
-                            st.session_state.current_scrape_page += 1
-                            st.session_state.page_size += 12
+                            # Wenn wir auf dieser Seite nichts neues gefunden haben (alles Duplikate)
+                            if not real_new_items:
+                                status.write(f"⚠️ Seite {current_page} enthielt nur bekannte Releases. Suche tiefer...")
+                                st.session_state.current_scrape_page += 1 # Seite als "erledigt" markieren
+                                continue # Nächster Schleifendurchlauf (nächste Seite)
                             
-                            if added_count == 0:
-                                st.warning("Es wurden Daten geladen, aber diese waren schon vorhanden.")
-                            else:
-                                st.success(f"{added_count} ältere Releases geladen!")
-                                st.rerun()
-                        else:
-                            st.warning("Keine weiteren Releases auf Nodata.tv gefunden.")
-                    except Exception as e:
-                        st.error(f"Fehler beim Live-Scraping: {e}")
+                            # Wenn wir neue Items haben: Hinzufügen
+                            for item in real_new_items:
+                                st.session_state.all_releases.append(item)
+                            
+                            found_new_items += len(real_new_items)
+                            st.session_state.current_scrape_page += 1 # Seite hochzählen
+                            
+                        except Exception as e:
+                            status.write(f"❌ Fehler auf Seite {current_page}: {e}")
+                            break
+                    
+                    # -- ENDE DER SCHLEIFE --
+                    
+                    if found_new_items > 0:
+                        st.session_state.page_size += found_new_items
+                        status.update(label=f"Erfolg! {found_new_items} ältere Releases gefunden.", state="complete", expanded=False)
+                        st.rerun()
+                    else:
+                        status.update(label="Keine noch unbekannten Releases in den nächsten 5 Seiten gefunden.", state="error")
+                        st.warning("Wir haben mehrere Seiten durchsucht, aber alle dortigen Releases waren bereits in deiner Liste.")
