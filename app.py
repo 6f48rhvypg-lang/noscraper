@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import os
 import extra_streamlit_components as stx
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # --- KONFIGURATION & SETUP ---
 st.set_page_config(
@@ -81,9 +81,16 @@ if 'seen_releases' not in st.session_state:
 def mark_as_seen(release_id):
     if release_id not in st.session_state.seen_releases:
         st.session_state.seen_releases.append(release_id)
-        # Speichere im Cookie (Gültig für 30 Tage)
-        cookie_manager.set("nodata_seen_v1", json.dumps(st.session_state.seen_releases), expires_at=datetime.now().timestamp() + 2592000)
-
+        
+        # FIX: Wir erstellen ein echtes Datum-Objekt in der Zukunft
+        # Ich setze es auf 365 Tage (1 Jahr), das ist im Web quasi "für immer"
+        expire_date = datetime.now() + timedelta(days=365)
+        
+        cookie_manager.set(
+            "nodata_seen_v1", 
+            json.dumps(st.session_state.seen_releases), 
+            expires_at=expire_date
+        )
 # --- HEADER ---
 col_h1, col_h2 = st.columns([3, 1])
 with col_h1:
