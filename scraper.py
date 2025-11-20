@@ -85,29 +85,29 @@ def _scrape_single_page(url):
         return []
 
 
-def scrape_nodata(pages=1):
+def scrape_nodata(pages=1, start_page=1):
     """
-    Scrapt die angegebenen Anzahl von Seiten von Nodata.tv.
-    :param pages: Die Anzahl der zu scrapenden Seiten (Default: 1).
-    :return: Liste aller gefundenen Releases.
+    Scrapt Seiten von Nodata.tv.
+    :param pages: Wie viele Seiten wir abrufen wollen.
+    :param start_page: Bei welcher Seite wir anfangen (z.B. Seite 4).
     """
     base_url = "https://nodata.tv/page/{}/"
     all_releases = []
     
-    print(f"Starte Scraping für {pages} Seite(n)...")
-    
-    for page in range(1, pages + 1):
-        url = base_url.format(page) if page > 1 else "https://nodata.tv/"
-        print(f"Scrape Seite {page} von {pages}: {url}")
+    # Wir laufen von start_page bis (start_page + pages)
+    for i in range(pages):
+        current_page = start_page + i
+        url = base_url.format(current_page) if current_page > 1 else "https://nodata.tv/"
+        print(f"Live-Scraping Seite {current_page}: {url}")
         
         releases_on_page = _scrape_single_page(url)
         all_releases.extend(releases_on_page)
         
-        # Freundlich sein: Kleine Pause zwischen Seiten-Requests
-        if page < pages:
+        if i < pages - 1:
             time.sleep(1) 
             
     return all_releases
+
 
 def main(history_pages=1):
     """
