@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import json
+import jsona
 import os
 import re
 from datetime import datetime
@@ -25,9 +25,17 @@ def generate_search_links(artist, title):
         "apple": f"https://music.apple.com/de/search?term={query}"
     }
 
-def scrape_nodata():
-    url = "https://nodata.tv/"
-    print(f"Starte Scraping von {url}...")
+# Kleines Snippet für scraper.py Erweiterung
+def scrape_nodata(pages=1):
+    base_url = "https://nodata.tv/page/{}/"
+    all_releases = []
+    
+    for page in range(1, pages + 1):
+        url = base_url.format(page) if page > 1 else "https://nodata.tv/"
+        # ... hier dein existierender Scraping Code ...
+        # ... appende Ergebnisse an all_releases ...
+    
+    return all_releases
     
     try:
         response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
