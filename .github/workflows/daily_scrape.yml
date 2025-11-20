@@ -1,0 +1,34 @@
+name: Daily Music Scraper
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Läuft jeden Tag um 06:00 Uhr morgens UTC
+  workflow_dispatch: # Erlaubt manuellen Start per Klick zum Testen
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 streamlit
+
+      - name: Run Scraper
+        run: python scraper.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Neuer Music Drop gefunden"
+          file_pattern: releases.json
