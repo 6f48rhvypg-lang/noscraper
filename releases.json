@@ -1,5 +1,144 @@
 [
     {
+        "id": "SDEM / At Quadrant Park [2025]",
+        "artist": "SDEM",
+        "album": "At Quadrant Park",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35661193.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Electronic",
+            "Experimental",
+            "IDM"
+        ],
+        "detail_url": "https://nodata.tv/196656",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=SDEM+At+Quadrant+Park",
+            "bandcamp": "https://bandcamp.com/search?q=SDEM+At+Quadrant+Park",
+            "soundcloud": "https://soundcloud.com/search?q=SDEM+At+Quadrant+Park",
+            "apple": "https://music.apple.com/de/search?term=SDEM+At+Quadrant+Park"
+        }
+    },
+    {
+        "id": "M\u00e5urizi\u00f6 / Ploy [1992]",
+        "artist": "M\u00e5urizi\u00f6",
+        "album": "Ploy",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-5564659.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196672",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=M%C3%A5urizi%C3%B6+Ploy",
+            "bandcamp": "https://bandcamp.com/search?q=M%C3%A5urizi%C3%B6+Ploy",
+            "soundcloud": "https://soundcloud.com/search?q=M%C3%A5urizi%C3%B6+Ploy",
+            "apple": "https://music.apple.com/de/search?term=M%C3%A5urizi%C3%B6+Ploy"
+        }
+    },
+    {
+        "id": "object blue / what resembles the grave but isn\u2019t [2025]",
+        "artist": "object blue",
+        "album": "what resembles the grave but isn\u2019t",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-13579307.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Bass",
+            "Club",
+            "Dance",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196676",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=object+blue+what+resembles+the+grave+but+isn%E2%80%99t",
+            "bandcamp": "https://bandcamp.com/search?q=object+blue+what+resembles+the+grave+but+isn%E2%80%99t",
+            "soundcloud": "https://soundcloud.com/search?q=object+blue+what+resembles+the+grave+but+isn%E2%80%99t",
+            "apple": "https://music.apple.com/de/search?term=object+blue+what+resembles+the+grave+but+isn%E2%80%99t"
+        }
+    },
+    {
+        "id": "Various Artists / 2025 [2025]",
+        "artist": "Various Artists",
+        "album": "2025",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35481688.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196652",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+2025",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+2025",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+2025",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+2025"
+        }
+    },
+    {
+        "id": "Low End Activist / Airdrop II [2025]",
+        "artist": "Low End Activist",
+        "album": "Airdrop II",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-28233364.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Grime",
+            "Hardcore",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/196618",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Low+End+Activist+Airdrop+II",
+            "bandcamp": "https://bandcamp.com/search?q=Low+End+Activist+Airdrop+II",
+            "soundcloud": "https://soundcloud.com/search?q=Low+End+Activist+Airdrop+II",
+            "apple": "https://music.apple.com/de/search?term=Low+End+Activist+Airdrop+II"
+        }
+    },
+    {
+        "id": "FJAAK / FJAAK 014 [2025]",
+        "artist": "FJAAK",
+        "album": "FJAAK 014",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-11917497.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Breakbeat",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196680",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=FJAAK+FJAAK+014",
+            "bandcamp": "https://bandcamp.com/search?q=FJAAK+FJAAK+014",
+            "soundcloud": "https://soundcloud.com/search?q=FJAAK+FJAAK+014",
+            "apple": "https://music.apple.com/de/search?term=FJAAK+FJAAK+014"
+        }
+    },
+    {
+        "id": "Sully / The Still [2025]",
+        "artist": "Sully",
+        "album": "The Still",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35669584.jpg",
+        "date_found": "Published on November 23, 2025",
+        "genres": [
+            "Drum n Bass",
+            "Electronic"
+        ],
+        "detail_url": "https://nodata.tv/196674",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sully+The+Still",
+            "bandcamp": "https://bandcamp.com/search?q=Sully+The+Still",
+            "soundcloud": "https://soundcloud.com/search?q=Sully+The+Still",
+            "apple": "https://music.apple.com/de/search?term=Sully+The+Still"
+        }
+    },
+    {
         "id": "Orca / Dancing With Dolphins Vol. 2 [2025]",
         "artist": "Orca",
         "album": "Dancing With Dolphins Vol. 2",
