@@ -126,6 +126,19 @@ else:
         for idx, release in enumerate(row):
             with cols[idx]:
                 with st.container(border=True):
+# ... Bild Code ...
+    
+    st.markdown(f"**{release['artist']}**")
+    st.markdown(f"<span style='color:#bbb; font-size:0.9em'>{release['album']}</span>", unsafe_allow_html=True)
+    
+    # NEU: Genres anzeigen
+    if release.get('genres'):
+        # Zeige maximal 3 Genres als kleine "Tags"
+        genres_html = " ".join([f"<span style='background:#333; padding:2px 6px; border-radius:4px; font-size:0.7em; margin-right:4px;'>{g}</span>" for g in release['genres'][:3]])
+        st.markdown(f"<div style='margin-top:5px; margin-bottom:10px;'>{genres_html}</div>", unsafe_allow_html=True)
+    
+    st.markdown("---")
+    # ... Buttons Code ...
                     # Status Check
                     is_seen = release['id'] in st.session_state.seen_releases
                     
