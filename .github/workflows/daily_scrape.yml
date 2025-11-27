@@ -1,34 +1,39 @@
-name: Daily Music Scraper
+name: Daily Scrape
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Läuft jeden Tag um 06:00 Uhr morgens UTC
-  workflow_dispatch: # Erlaubt manuellen Start per Klick zum Testen
-
-permissions:
-  contents: write
+    - cron: '0 7 * * *' # Jeden Tag um 07:00 UTC
+  workflow_dispatch: # Manuell startbar
 
 jobs:
-  scrape:
+  scrape-and-notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 streamlit
+          pip install requests beautifulsoup4
 
       - name: Run Scraper
         run: python scraper.py
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🤖 Neuer Music Drop gefunden"
-          file_pattern: releases.json
+      - name: Send Notification
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python notify.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add releases.json
+          # Nur committen, wenn sich was geändert hat
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update releases [skip ci]" && git push)
