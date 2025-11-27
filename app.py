@@ -3,245 +3,215 @@ import json
 import os
 import extra_streamlit_components as stx
 from datetime import datetime, timedelta
-from scraper import scrape_nodata  # Importiert die Scraper-Logik
+# Wir importieren den Scraper, um bei Bedarf live nachzuladen
+from scraper import scrape_nodata
 
-# --- KONFIGURATION & SETUP ---
+# --- Page Config & CSS ---
 st.set_page_config(
-    page_title="Nodata Release Radar",
-    page_icon="🎵",
-    layout="wide",
+    page_title="Nodata Release Radar", 
+    page_icon="🎵", 
+    layout="wide", 
     initial_sidebar_state="collapsed"
 )
 
-# --- CUSTOM CSS (DARK MODE & CARD DESIGN) ---
+# CSS Hacks:
+# 1. [data-testid="column"]: Macht die Spalten responsive (min. 200px breit, sonst Umbruch)
+# 2. .stImage: Hover-Effekt für Cover
 st.markdown("""
 <style>
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 5rem;
+    .block-container {padding-top: 2rem; padding-bottom: 5rem;}
+    
+    [data-testid="column"] {
+        min-width: 220px !important;
+        flex: 1 1 220px !important; 
     }
-    div.stButton > button {
-        width: 100%;
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .stImage img {
-        border-radius: 8px;
-        transition: transform 0.3s ease;
-    }
-    .stImage img:hover {
-        transform: scale(1.02);
+    
+    div.stButton > button {width: 100%; border-radius: 8px;}
+    
+    .stImage img {border-radius: 4px; transition: transform 0.3s ease;}
+    .stImage img:hover {transform: scale(1.02);}
+    
+    /* Genre Tags Style */
+    .genre-tag {
+        background: rgba(255,255,255,0.1); 
+        padding: 2px 8px; 
+        border-radius: 10px; 
+        font-size: 0.7em; 
+        margin-right: 4px; 
+        display: inline-block; 
+        margin-bottom: 4px;
+        color: #ddd;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# --- COOKIE MANAGER SETUP ---
-def get_manager():
-    return stx.CookieManager()
-
+# --- Cookie Manager ---
+def get_manager(): return stx.CookieManager()
 cookie_manager = get_manager()
 
-# --- DATEN LADEN ---
+# --- Data Loading ---
 @st.cache_data(ttl=3600)
 def load_initial_data():
-    """Lädt die JSON-Datei vom Server (GitHub Stand)"""
     if os.path.exists("releases.json"):
-        with open("releases.json", "r") as f:
-            return json.load(f)
+        with open("releases.json", "r") as f: return json.load(f)
     return []
 
-# --- STATE INITIALISIERUNG ---
-
-# 1. "Gesehen"-Status laden
+# --- Session State Init ---
 if 'seen_releases' not in st.session_state:
     cookie_val = cookie_manager.get(cookie="nodata_seen_v1")
-    if cookie_val:
-        try:
-            st.session_state.seen_releases = json.loads(cookie_val)
-        except:
-            st.session_state.seen_releases = []
-    else:
-        st.session_state.seen_releases = []
+    st.session_state.seen_releases = json.loads(cookie_val) if cookie_val else []
 
-# 2. Release-Daten initialisieren
-# Wir kopieren die Daten in den Session State, damit wir später neue (gescrapte) Daten anhängen können
 if 'all_releases' not in st.session_state:
     initial_data = load_initial_data()
     st.session_state.all_releases = initial_data
-    
-    # Wir schätzen ab, bei welcher "Seite" wir uns befinden (ca. 10 Items pro Seite)
-    # Das hilft dem Scraper zu wissen, wo er weitermachen soll
+    # Startpunkt für Live-Scraping, falls lokale Daten zu Ende sind
     st.session_state.current_scrape_page = max(1, len(initial_data) // 10)
 
-# 3. Pagination Status
-if 'page_size' not in st.session_state:
+if 'page_size' not in st.session_state: 
     st.session_state.page_size = 12
 
-# --- HELPER FUNKTIONEN ---
-
+# --- Logic ---
 def mark_as_seen(release_id):
-    """Markiert ein Album als gesehen und speichert es im Cookie für 1 Jahr"""
     if release_id not in st.session_state.seen_releases:
         st.session_state.seen_releases.append(release_id)
-        
-        # FIX: Verwende ein datetime Objekt statt Timestamp
+        # Cookie update (1 Jahr gültig)
         expire_date = datetime.now() + timedelta(days=365)
-        
-        cookie_manager.set(
-            "nodata_seen_v1", 
-            json.dumps(st.session_state.seen_releases), 
-            expires_at=expire_date
-        )
+        cookie_manager.set("nodata_seen_v1", json.dumps(st.session_state.seen_releases), expires_at=expire_date)
 
-# --- HEADER ---
+# --- Header & Search ---
 col_h1, col_h2 = st.columns([3, 1])
-with col_h1:
-    st.title("🎵 Nodata.tv Radar")
-    st.caption("Serverless Music Discovery")
-with col_h2:
-    search = st.text_input("🔍 Filter...", "", placeholder="Artist oder Album")
+with col_h1: st.title("🎵 Nodata.tv Radar")
+with col_h2: search = st.text_input("🔍 Filter...", "")
 
-# --- LOGIK: FILTERN ---
+# Filtering
 if search:
-    # Bei Suche zeigen wir alles, was passt (aus den bereits geladenen Daten)
-    filtered_data = [
-        r for r in st.session_state.all_releases 
-        if search.lower() in r['artist'].lower() or search.lower() in r['album'].lower()
-    ]
+    filtered_data = [r for r in st.session_state.all_releases if search.lower() in r['artist'].lower() or search.lower() in r['album'].lower()]
     is_search_mode = True
 else:
-    # Normale Ansicht: Nur die ersten 'page_size' Elemente zeigen
     filtered_data = st.session_state.all_releases[:st.session_state.page_size]
     is_search_mode = False
 
-# --- UI: GRID RENDERER ---
+# --- Main Grid ---
 if not filtered_data:
     st.info("Keine Releases gefunden.")
 else:
-    cols_per_row = 4
-    rows = [filtered_data[i:i + cols_per_row] for i in range(0, len(filtered_data), cols_per_row)]
-
-    for row in rows:
-        cols = st.columns(cols_per_row)
-        for idx, release in enumerate(row):
-            with cols[idx]:
-                with st.container(border=True):
-# ... Bild Code ...
+    # Responsive Grid Loop
+    cols = st.columns(4) # Definiert 4 Spalten (die durch CSS auf Mobile umbrechen)
     
-    st.markdown(f"**{release['artist']}**")
-    st.markdown(f"<span style='color:#bbb; font-size:0.9em'>{release['album']}</span>", unsafe_allow_html=True)
-    
-    # NEU: Genres anzeigen
-    if release.get('genres'):
-        # Zeige maximal 3 Genres als kleine "Tags"
-        genres_html = " ".join([f"<span style='background:#333; padding:2px 6px; border-radius:4px; font-size:0.7em; margin-right:4px;'>{g}</span>" for g in release['genres'][:3]])
-        st.markdown(f"<div style='margin-top:5px; margin-bottom:10px;'>{genres_html}</div>", unsafe_allow_html=True)
-    
-    st.markdown("---")
-    # ... Buttons Code ...
-                    # Status Check
-                    is_seen = release['id'] in st.session_state.seen_releases
-                    
-                    # Bild (ausgegraut wenn gesehen)
-                    if release['image']:
-                        opacity = 0.5 if is_seen else 1.0
-                        st.markdown(f'<div style="opacity: {opacity}">', unsafe_allow_html=True)
-                        st.image(release['image'], use_container_width=True)
-                        st.markdown('</div>', unsafe_allow_html=True)
-                    else:
-                        st.image("https://placehold.co/400x400?text=No+Cover", use_container_width=True)
+    for idx, release in enumerate(filtered_data):
+        col_index = idx % 4
+        
+        with cols[col_index]:
+            with st.container(border=True):
+                is_seen = release['id'] in st.session_state.seen_releases
+                opacity = 0.4 if is_seen else 1.0
+                
+                # 1. Status Badge
+                if is_seen: 
+                    st.caption("✅ Gesehen")
+                
+                # 2. Cover Image
+                if release['image']:
+                    st.markdown(f'<div style="opacity: {opacity}">', unsafe_allow_html=True)
+                    st.image(release['image'], use_container_width=True)
+                    st.markdown('</div>', unsafe_allow_html=True)
+                else:
+                    st.image("https://placehold.co/400x400?text=No+Cover", use_container_width=True)
+                
+                # 3. Info Text
+                st.markdown(f"**{release['artist']}**")
+                st.markdown(f"<span style='color:#bbb; font-size:0.9em'>{release['album']}</span>", unsafe_allow_html=True)
+                
+                # 4. Genres (Neu)
+                if release.get('genres'):
+                    tags_html = "".join([f"<span class='genre-tag'>{g}</span>" for g in release['genres'][:4]])
+                    st.markdown(f"<div style='margin-top:6px; line-height:1.2;'>{tags_html}</div>", unsafe_allow_html=True)
+                
+                st.markdown("---")
+                
+                # 5. Actions
+                c_play, c_check = st.columns([1, 1])
+                
+                with c_play:
+                    st.link_button("▶ Play", release['links']['youtube'], use_container_width=True)
+                
+                with c_check:
+                    # Toggle Button
+                    btn_label = "Undo" if is_seen else "Check"
+                    # Key muss unique sein pro Button!
+                    if st.button(btn_label, key=f"seen_btn_{release['id']}", type="secondary" if is_seen else "primary", use_container_width=True):
+                        if is_seen:
+                            st.session_state.seen_releases.remove(release['id'])
+                            # Cookie update beim Entfernen (optional, hier einfachheitshalber Re-Save)
+                            expire_date = datetime.now() + timedelta(days=365)
+                            cookie_manager.set("nodata_seen_v1", json.dumps(st.session_state.seen_releases), expires_at=expire_date)
+                        else:
+                            mark_as_seen(release['id'])
+                        st.rerun()
+                
+                # 6. More Links Popover
+                with st.popover("Mehr Links", use_container_width=True):
+                    st.markdown(f"**Suche auf:**")
+                    st.markdown(f"• [Bandcamp]({release['links']['bandcamp']})")
+                    st.markdown(f"• [Soundcloud]({release['links']['soundcloud']})")
+                    st.markdown(f"• [Apple Music]({release['links']['apple']})")
+                    if release.get('detail_url'):
+                        st.divider()
+                        st.markdown(f"🔗 [Original Post auf Nodata]({release.get('detail_url')})")
 
-                    # Titel & Text
-                    display_album = (release['album'][:30] + '..') if len(release['album']) > 30 else release['album']
-                    
-                    if is_seen:
-                        st.markdown("✅ <small style='color:gray'>Gesehen</small>", unsafe_allow_html=True)
-                    
-                    st.subheader(release['artist'])
-                    st.write(f"**{display_album}**")
-                    st.caption(f"📅 {release['date_found']}")
-
-                    # Links & Aktionen
-                    with st.expander("🎧 Anhören / Links"):
-                        l = release['links']
-                        st.link_button("YouTube", l['youtube'], use_container_width=True)
-                        st.link_button("SoundCloud", l['soundcloud'], use_container_width=True)
-                        st.link_button("Bandcamp", l['bandcamp'], use_container_width=True)
-                        st.link_button("Apple Music", l['apple'], use_container_width=True)
-                        
-                        if not is_seen:
-                            if st.button("Als gesehen markieren", key=f"seen_{release['id']}"):
-                                mark_as_seen(release['id'])
-                                st.rerun()
-
-# --- FOOTER / LOAD MORE LOGIC ---
+# --- Footer / Load More Logic ---
 if not is_search_mode:
     st.divider()
-    col_b1, col_b2, col_b3 = st.columns([1, 2, 1])
-    with col_b2:
-        # Checken: Haben wir lokal noch Daten, die wir nur noch nicht anzeigen?
-        has_more_local_data = len(st.session_state.all_releases) > st.session_state.page_size
+    c1, c2, c3 = st.columns([1, 2, 1])
+    with c2:
+        has_more_local = len(st.session_state.all_releases) > st.session_state.page_size
         
-        if st.button("👇 Mehr Releases laden"):
-            if has_more_local_data:
-                # Fall A: Wir haben die Daten schon lokal
+        if st.button("👇 Mehr Releases laden", use_container_width=True):
+            if has_more_local:
                 st.session_state.page_size += 12
                 st.rerun()
             else:
-                # Fall B: Deep Search (Live Scraping)
-                # Wir nutzen st.status für besseres Feedback
-                with st.status("Durchsuche Nodata-Archiv nach älteren Releases...", expanded=True) as status:
-                    
-                    found_new_items = 0
+                # --- DEEP SEARCH LOOP ---
+                max_attempts = 20
+                with st.status("Durchsuche Nodata-Archiv...", expanded=True) as status:
+                    found_count = 0
                     attempts = 0
-                    max_attempts = 5 # Sicherheitsbremse: Maximal 5 Seiten tief suchen pro Klick
+                    p_bar = status.progress(0)
                     
-                    # Loop: Suche solange, bis wir 12 neue Items haben oder 5 Seiten durchsucht haben
-                    while found_new_items < 12 and attempts < max_attempts:
+                    while found_count < 8 and attempts < max_attempts:
                         attempts += 1
-                        current_page = st.session_state.current_scrape_page + 1
+                        page_to_scrape = st.session_state.current_scrape_page + 1
                         
-                        status.write(f"🔍 Prüfe Seite {current_page} auf Nodata.tv...")
+                        status.write(f"Scanne Seite {page_to_scrape}...")
+                        p_bar.progress(min(attempts * 5, 100))
                         
                         try:
-                            # Scrape genau EINE Seite
-                            scraped_items = scrape_nodata(pages=1, start_page=current_page)
+                            # Live Scraping der nächsten Seite
+                            items = scrape_nodata(pages=1, start_page=page_to_scrape)
                             
-                            if not scraped_items:
-                                status.update(label="Ende des Archivs erreicht.", state="error")
+                            if not items: 
+                                status.write("Ende des Archivs erreicht.")
                                 break
-                                
-                            # Prüfen: Was davon ist wirklich neu?
-                            existing_ids = {item['id'] for item in st.session_state.all_releases}
-                            real_new_items = []
                             
-                            for item in scraped_items:
-                                if item['id'] not in existing_ids:
-                                    real_new_items.append(item)
+                            # Filter: Nur IDs, die wir noch nicht im aktuellen State haben
+                            current_ids = {x['id'] for x in st.session_state.all_releases}
+                            new_items = [x for x in items if x['id'] not in current_ids]
                             
-                            # Wenn wir auf dieser Seite nichts neues gefunden haben (alles Duplikate)
-                            if not real_new_items:
-                                status.write(f"⚠️ Seite {current_page} enthielt nur bekannte Releases. Suche tiefer...")
-                                st.session_state.current_scrape_page += 1 # Seite als "erledigt" markieren
-                                continue # Nächster Schleifendurchlauf (nächste Seite)
+                            if new_items:
+                                st.session_state.all_releases.extend(new_items)
+                                found_count += len(new_items)
+                                status.write(f"✅ {len(new_items)} neue Releases gefunden!")
                             
-                            # Wenn wir neue Items haben: Hinzufügen
-                            for item in real_new_items:
-                                st.session_state.all_releases.append(item)
-                            
-                            found_new_items += len(real_new_items)
-                            st.session_state.current_scrape_page += 1 # Seite hochzählen
+                            # Zähler hochsetzen für nächsten Loop
+                            st.session_state.current_scrape_page += 1
                             
                         except Exception as e:
-                            status.write(f"❌ Fehler auf Seite {current_page}: {e}")
+                            status.error(f"Fehler beim Scraping: {e}")
                             break
                     
-                    # -- ENDE DER SCHLEIFE --
-                    
-                    if found_new_items > 0:
-                        st.session_state.page_size += found_new_items
-                        status.update(label=f"Erfolg! {found_new_items} ältere Releases gefunden.", state="complete", expanded=False)
+                    if found_count > 0:
+                        st.session_state.page_size += found_count
+                        status.update(label=f"{found_count} geladen!", state="complete")
                         st.rerun()
                     else:
-                        status.update(label="Keine noch unbekannten Releases in den nächsten 5 Seiten gefunden.", state="error")
-                        st.warning("Wir haben mehrere Seiten durchsucht, aber alle dortigen Releases waren bereits in deiner Liste.")
+                        status.update(label="Keine neuen Releases im Archiv gefunden.", state="error")
