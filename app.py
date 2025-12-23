@@ -350,12 +350,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- Cookie Manager (Singleton via cache_resource) ---
-@st.cache_resource
-def get_cookie_manager():
-    return stx.CookieManager(key="nodata_cookie_manager")
-
-cookie_manager = get_cookie_manager()
+# --- Cookie Manager ---
+# Note: CookieManager can't be cached due to internal widget usage
+cookie_manager = stx.CookieManager(key="nodata_cookie_manager")
 
 # --- Data Loading ---
 @st.cache_data(ttl=3600)
