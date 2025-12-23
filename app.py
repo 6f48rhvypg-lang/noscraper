@@ -539,16 +539,16 @@ else:
                 
                 st.markdown(f"**{artist}**")
                 if album:
-                    st.markdown(f'<span style="color:rgba(255,255,255,0.6); font-size:0.9em;">{album}</span>', unsafe_allow_html=True)
+                    st.caption(album)
                 
                 # --- GENRE PILLS ---
                 genres = release.get('genres', [])[:4]
                 if genres:
                     pills_html = "".join([
-                        f'<span style="background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.7); '
+                        f'<span style="background:rgba(128,128,128,0.2); color:inherit; '
                         f'padding:3px 10px; border-radius:100px; font-size:0.65rem; font-weight:500; '
                         f'text-transform:uppercase; letter-spacing:0.04em; margin-right:5px; '
-                        f'display:inline-block; margin-bottom:5px;">{g}</span>'
+                        f'display:inline-block; margin-bottom:5px; border:1px solid rgba(128,128,128,0.3);">{g}</span>'
                         for g in genres
                     ])
                     st.markdown(f'<div style="margin-top:8px;">{pills_html}</div>', unsafe_allow_html=True)
