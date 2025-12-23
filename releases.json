@@ -1,5 +1,404 @@
 [
     {
+        "id": "Low End Activist / Airdrop III [2025]",
+        "artist": "Low End Activist",
+        "album": "Airdrop III",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-34888439.jpg",
+        "date_found": "2025-12-08",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Garage",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/196709",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Low+End+Activist+Airdrop+III",
+            "bandcamp": "https://bandcamp.com/search?q=Low+End+Activist+Airdrop+III",
+            "soundcloud": "https://soundcloud.com/search?q=Low+End+Activist+Airdrop+III",
+            "apple": "https://music.apple.com/de/search?term=Low+End+Activist+Airdrop+III"
+        }
+    },
+    {
+        "id": "1morning / Because I Told You So [2025]",
+        "artist": "1morning",
+        "album": "Because I Told You So",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35844502.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196772",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=1morning+Because+I+Told+You+So",
+            "bandcamp": "https://bandcamp.com/search?q=1morning+Because+I+Told+You+So",
+            "soundcloud": "https://soundcloud.com/search?q=1morning+Because+I+Told+You+So",
+            "apple": "https://music.apple.com/de/search?term=1morning+Because+I+Told+You+So"
+        }
+    },
+    {
+        "id": "Sara Udon / II = II [2025]",
+        "artist": "Sara Udon",
+        "album": "II = II",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35666941.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Ambient",
+            "Drone",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/196765",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sara+Udon+II+%3D+II",
+            "bandcamp": "https://bandcamp.com/search?q=Sara+Udon+II+%3D+II",
+            "soundcloud": "https://soundcloud.com/search?q=Sara+Udon+II+%3D+II",
+            "apple": "https://music.apple.com/de/search?term=Sara+Udon+II+%3D+II"
+        }
+    },
+    {
+        "id": "Kr!z / Glaciers [2025]",
+        "artist": "Kr!z",
+        "album": "Glaciers",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-13490825.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196775",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Kr%21z+Glaciers",
+            "bandcamp": "https://bandcamp.com/search?q=Kr%21z+Glaciers",
+            "soundcloud": "https://soundcloud.com/search?q=Kr%21z+Glaciers",
+            "apple": "https://music.apple.com/de/search?term=Kr%21z+Glaciers"
+        }
+    },
+    {
+        "id": "Anthony Naples / In Studio Magic [2025]",
+        "artist": "Anthony Naples",
+        "album": "In Studio Magic",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-3269605.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Ambient",
+            "Downtempo",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196763",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Anthony+Naples+In+Studio+Magic",
+            "bandcamp": "https://bandcamp.com/search?q=Anthony+Naples+In+Studio+Magic",
+            "soundcloud": "https://soundcloud.com/search?q=Anthony+Naples+In+Studio+Magic",
+            "apple": "https://music.apple.com/de/search?term=Anthony+Naples+In+Studio+Magic"
+        }
+    },
+    {
+        "id": "Solitary Dancer / Y-3003 [2025]",
+        "artist": "Solitary Dancer",
+        "album": "Y-3003",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35822113.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196743",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Solitary+Dancer+Y-3003",
+            "bandcamp": "https://bandcamp.com/search?q=Solitary+Dancer+Y-3003",
+            "soundcloud": "https://soundcloud.com/search?q=Solitary+Dancer+Y-3003",
+            "apple": "https://music.apple.com/de/search?term=Solitary+Dancer+Y-3003"
+        }
+    },
+    {
+        "id": "Henry Greenleaf / Ghost Town [2025]",
+        "artist": "Henry Greenleaf",
+        "album": "Ghost Town",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-3089810.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Breaks",
+            "Dubstep",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196757",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Henry+Greenleaf+Ghost+Town",
+            "bandcamp": "https://bandcamp.com/search?q=Henry+Greenleaf+Ghost+Town",
+            "soundcloud": "https://soundcloud.com/search?q=Henry+Greenleaf+Ghost+Town",
+            "apple": "https://music.apple.com/de/search?term=Henry+Greenleaf+Ghost+Town"
+        }
+    },
+    {
+        "id": "Domenic Cappello / Dream Of You [2025]",
+        "artist": "Domenic Cappello",
+        "album": "Dream Of You",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-1609942.jpg",
+        "date_found": "2025-12-05",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196767",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Domenic+Cappello+Dream+Of+You",
+            "bandcamp": "https://bandcamp.com/search?q=Domenic+Cappello+Dream+Of+You",
+            "soundcloud": "https://soundcloud.com/search?q=Domenic+Cappello+Dream+Of+You",
+            "apple": "https://music.apple.com/de/search?term=Domenic+Cappello+Dream+Of+You"
+        }
+    },
+    {
+        "id": "D’Marc Cantu & Danny Passarella / The Future Has A Silver Lining 2 [2020]",
+        "artist": "D’Marc Cantu & Danny Passarella",
+        "album": "The Future Has A Silver Lining 2",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-219778842.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196707",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+2",
+            "bandcamp": "https://bandcamp.com/search?q=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+2",
+            "soundcloud": "https://soundcloud.com/search?q=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+2",
+            "apple": "https://music.apple.com/de/search?term=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+2"
+        }
+    },
+    {
+        "id": "Aquafaba / Plura [2025]",
+        "artist": "Aquafaba",
+        "album": "Plura",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-21432241.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Acid",
+            "Ambient",
+            "House",
+            "Leftfield",
+            "Techno",
+            "Trance"
+        ],
+        "detail_url": "https://nodata.tv/196733",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Aquafaba+Plura",
+            "bandcamp": "https://bandcamp.com/search?q=Aquafaba+Plura",
+            "soundcloud": "https://soundcloud.com/search?q=Aquafaba+Plura",
+            "apple": "https://music.apple.com/de/search?term=Aquafaba+Plura"
+        }
+    },
+    {
+        "id": "Agonis / Mantis 18 [2025]",
+        "artist": "Agonis",
+        "album": "Mantis 18",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35697262.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196737",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Agonis+Mantis+18",
+            "bandcamp": "https://bandcamp.com/search?q=Agonis+Mantis+18",
+            "soundcloud": "https://soundcloud.com/search?q=Agonis+Mantis+18",
+            "apple": "https://music.apple.com/de/search?term=Agonis+Mantis+18"
+        }
+    },
+    {
+        "id": "KITSCHSELEKTOR / Permit Riddim [2025]",
+        "artist": "KITSCHSELEKTOR",
+        "album": "Permit Riddim",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35366383.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Dub",
+            "Electronic"
+        ],
+        "detail_url": "https://nodata.tv/196735",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=KITSCHSELEKTOR+Permit+Riddim",
+            "bandcamp": "https://bandcamp.com/search?q=KITSCHSELEKTOR+Permit+Riddim",
+            "soundcloud": "https://soundcloud.com/search?q=KITSCHSELEKTOR+Permit+Riddim",
+            "apple": "https://music.apple.com/de/search?term=KITSCHSELEKTOR+Permit+Riddim"
+        }
+    },
+    {
+        "id": "Oneohtrix Point Never / Tranquilizer [2025]",
+        "artist": "Oneohtrix Point Never",
+        "album": "Tranquilizer",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35733064.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Glitch",
+            "IDM",
+            "Leftfield"
+        ],
+        "detail_url": "https://nodata.tv/196729",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Oneohtrix+Point+Never+Tranquilizer",
+            "bandcamp": "https://bandcamp.com/search?q=Oneohtrix+Point+Never+Tranquilizer",
+            "soundcloud": "https://soundcloud.com/search?q=Oneohtrix+Point+Never+Tranquilizer",
+            "apple": "https://music.apple.com/de/search?term=Oneohtrix+Point+Never+Tranquilizer"
+        }
+    },
+    {
+        "id": "Martinou / We Orbit [2025]",
+        "artist": "Martinou",
+        "album": "We Orbit",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35713228.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196731",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Martinou+We+Orbit",
+            "bandcamp": "https://bandcamp.com/search?q=Martinou+We+Orbit",
+            "soundcloud": "https://soundcloud.com/search?q=Martinou+We+Orbit",
+            "apple": "https://music.apple.com/de/search?term=Martinou+We+Orbit"
+        }
+    },
+    {
+        "id": "Brandon Juhans / Recycler [2025]",
+        "artist": "Brandon Juhans",
+        "album": "Recycler",
+        "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35059721.jpg",
+        "date_found": "2025-12-03",
+        "genres": [
+            "Abstract",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/196713",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Brandon+Juhans+Recycler",
+            "bandcamp": "https://bandcamp.com/search?q=Brandon+Juhans+Recycler",
+            "soundcloud": "https://soundcloud.com/search?q=Brandon+Juhans+Recycler",
+            "apple": "https://music.apple.com/de/search?term=Brandon+Juhans+Recycler"
+        }
+    },
+    {
+        "id": "Pessimist / DVLA [2025]",
+        "artist": "Pessimist",
+        "album": "DVLA",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-2125136.jpg",
+        "date_found": "2025-11-28",
+        "genres": [
+            "Ambient",
+            "Breakbeat",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196711",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Pessimist+DVLA",
+            "bandcamp": "https://bandcamp.com/search?q=Pessimist+DVLA",
+            "soundcloud": "https://soundcloud.com/search?q=Pessimist+DVLA",
+            "apple": "https://music.apple.com/de/search?term=Pessimist+DVLA"
+        }
+    },
+    {
+        "id": "Tim Reaper / in vain [2025]",
+        "artist": "Tim Reaper",
+        "album": "in vain",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-22782386.jpg",
+        "date_found": "2025-11-28",
+        "genres": [
+            "Ambient",
+            "Drum n Bass",
+            "Dubstep",
+            "Electronic",
+            "Experimental",
+            "Future Garage"
+        ],
+        "detail_url": "https://nodata.tv/196701",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Tim+Reaper+in+vain",
+            "bandcamp": "https://bandcamp.com/search?q=Tim+Reaper+in+vain",
+            "soundcloud": "https://soundcloud.com/search?q=Tim+Reaper+in+vain",
+            "apple": "https://music.apple.com/de/search?term=Tim+Reaper+in+vain"
+        }
+    },
+    {
+        "id": "Perfo / City Drift [2025]",
+        "artist": "Perfo",
+        "album": "City Drift",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-26985668.jpg",
+        "date_found": "2025-11-28",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196678",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Perfo+City+Drift",
+            "bandcamp": "https://bandcamp.com/search?q=Perfo+City+Drift",
+            "soundcloud": "https://soundcloud.com/search?q=Perfo+City+Drift",
+            "apple": "https://music.apple.com/de/search?term=Perfo+City+Drift"
+        }
+    },
+    {
+        "id": "Siriusmo / Buletten & Blumen [2025]",
+        "artist": "Siriusmo",
+        "album": "Buletten & Blumen",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35749612.jpg",
+        "date_found": "2025-11-28",
+        "genres": [
+            "Dance",
+            "Electronic",
+            "House",
+            "Synth-pop",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196699",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Siriusmo+Buletten+%26+Blumen",
+            "bandcamp": "https://bandcamp.com/search?q=Siriusmo+Buletten+%26+Blumen",
+            "soundcloud": "https://soundcloud.com/search?q=Siriusmo+Buletten+%26+Blumen",
+            "apple": "https://music.apple.com/de/search?term=Siriusmo+Buletten+%26+Blumen"
+        }
+    },
+    {
+        "id": "Marvin Dash / Fine Time [2001]",
+        "artist": "Marvin Dash",
+        "album": "Fine Time",
+        "image": "https://nodata.tv/wp-content/uploads/2025/11/R-1600406.jpg",
+        "date_found": "2025-11-28",
+        "genres": [
+            "Breaks",
+            "Electronic",
+            "House"
+        ],
+        "detail_url": "https://nodata.tv/196703",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Marvin+Dash+Fine+Time",
+            "bandcamp": "https://bandcamp.com/search?q=Marvin+Dash+Fine+Time",
+            "soundcloud": "https://soundcloud.com/search?q=Marvin+Dash+Fine+Time",
+            "apple": "https://music.apple.com/de/search?term=Marvin+Dash+Fine+Time"
+        }
+    },
+    {
         "id": "Internazionale / A Gift [2025]",
         "artist": "Internazionale",
         "album": "A Gift",
@@ -57,8 +456,8 @@
         }
     },
     {
-        "id": "DJ Fokus \u2013 Pulse / Get Hyper / Like Dat [2025]",
-        "artist": "DJ Fokus \u2013 Pulse",
+        "id": "DJ Fokus – Pulse / Get Hyper / Like Dat [2025]",
+        "artist": "DJ Fokus – Pulse",
         "album": "Get Hyper / Like Dat",
         "image": "https://nodata.tv/wp-content/uploads/2025/12/R-35889850.jpg",
         "date_found": "2025-12-20",
@@ -251,9 +650,9 @@
         }
     },
     {
-        "id": "40oz / Downlow\u2019d [2006]",
+        "id": "40oz / Downlow’d [2006]",
         "artist": "40oz",
-        "album": "Downlow\u2019d",
+        "album": "Downlow’d",
         "image": "https://nodata.tv/wp-content/uploads/2025/12/R-63107742.jpg",
         "date_found": "2025-12-14",
         "genres": [
@@ -377,8 +776,8 @@
         }
     },
     {
-        "id": "Subjects \u2013 Kookaburra / Horns [2025]",
-        "artist": "Subjects \u2013 Kookaburra",
+        "id": "Subjects – Kookaburra / Horns [2025]",
+        "artist": "Subjects – Kookaburra",
         "album": "Horns",
         "image": "https://nodata.tv/wp-content/uploads/2025/12/R-57539242.jpg",
         "date_found": "2025-12-08",
@@ -415,8 +814,8 @@
         }
     },
     {
-        "id": "M\u00e5urizi\u00f6 / Ploy [1992]",
-        "artist": "M\u00e5urizi\u00f6",
+        "id": "Måuriziö / Ploy [1992]",
+        "artist": "Måuriziö",
         "album": "Ploy",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-5564659.jpg",
         "date_found": "Published on November 23, 2025",
@@ -434,9 +833,9 @@
         }
     },
     {
-        "id": "object blue / what resembles the grave but isn\u2019t [2025]",
+        "id": "object blue / what resembles the grave but isn’t [2025]",
         "artist": "object blue",
-        "album": "what resembles the grave but isn\u2019t",
+        "album": "what resembles the grave but isn’t",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-13579307.jpg",
         "date_found": "Published on November 23, 2025",
         "genres": [
@@ -587,9 +986,9 @@
         }
     },
     {
-        "id": "UVB / Nouveau Dossier Contenant Des \u00c9l\u00e9ments Anciens [2025]",
+        "id": "UVB / Nouveau Dossier Contenant Des Éléments Anciens [2025]",
         "artist": "UVB",
-        "album": "Nouveau Dossier Contenant Des \u00c9l\u00e9ments Anciens",
+        "album": "Nouveau Dossier Contenant Des Éléments Anciens",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35657788.jpeg",
         "date_found": "Published on November 17, 2025",
         "links": {
@@ -652,8 +1051,8 @@
         }
     },
     {
-        "id": "\u00b5-Ziq / Manzana [2025]",
-        "artist": "\u00b5-Ziq",
+        "id": "µ-Ziq / Manzana [2025]",
+        "artist": "µ-Ziq",
         "album": "Manzana",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35596390.jpg",
         "date_found": "Published on November 14, 2025",
@@ -769,8 +1168,8 @@
         }
     },
     {
-        "id": "Harmony \u2013 Vision / Wrong Turn [2025]",
-        "artist": "Harmony \u2013 Vision",
+        "id": "Harmony – Vision / Wrong Turn [2025]",
+        "artist": "Harmony – Vision",
         "album": "Wrong Turn",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-35521960.jpg",
         "date_found": "Published on November 11, 2025",
@@ -782,8 +1181,8 @@
         }
     },
     {
-        "id": "D\u2019Marc Cantu & Danny Passarella / The Future Has A Silver Lining [2025]",
-        "artist": "D\u2019Marc Cantu & Danny Passarella",
+        "id": "D’Marc Cantu & Danny Passarella / The Future Has A Silver Lining [2025]",
+        "artist": "D’Marc Cantu & Danny Passarella",
         "album": "The Future Has A Silver Lining",
         "image": "https://nodata.tv/wp-content/uploads/2025/11/R-13330475.jpg",
         "date_found": "Published on November 11, 2025",
