@@ -17,7 +17,7 @@ DEEP_SCRAPE_DELAY = 0.5  # Delay between detail page requests to avoid rate limi
 # Telegram Configuration (via Environment Variables for security)
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-STREAMLIT_APP_URL = os.environ.get("STREAMLIT_APP_URL", "https://nodata-radar.streamlit.app")
+STREAMLIT_APP_URL = os.environ.get("STREAMLIT_APP_URL", "https://ksopvh83mkkjrwsu5xbwdt.streamlit.app/")
 
 # Genre categories to filter out (not actual music genres)
 IGNORED_CATEGORIES = frozenset([
@@ -98,7 +98,7 @@ def send_telegram_alert(new_releases: list, notify_enabled: bool = True) -> bool
     message_parts.extend([
         "",
         "━━━━━━━━━━━━━━━━━━━━",
-        f"🚀 <a href=\"{STREAMLIT_APP_URL}\">Öffne Nodata Radar App</a>"
+        f"🎧 <b><a href=\"{STREAMLIT_APP_URL}\">Jetzt anhören in der App →</a></b>"
     ])
     
     message = "\n".join(message_parts)
