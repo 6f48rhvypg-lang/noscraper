@@ -1,5 +1,137 @@
 [
     {
+        "id": "Martinou / Always There [2025]",
+        "artist": "Martinou",
+        "album": "Always There",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35947438.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196867",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Martinou+Always+There",
+            "bandcamp": "https://bandcamp.com/search?q=Martinou+Always+There",
+            "soundcloud": "https://soundcloud.com/search?q=Martinou+Always+There",
+            "apple": "https://music.apple.com/de/search?term=Martinou+Always+There"
+        }
+    },
+    {
+        "id": "D’Marc Cantu & Danny Passarella / The Future Has A Silver Lining 3 [2021]",
+        "artist": "D’Marc Cantu & Danny Passarella",
+        "album": "The Future Has A Silver Lining 3",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-15399290.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196854",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+3",
+            "bandcamp": "https://bandcamp.com/search?q=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+3",
+            "soundcloud": "https://soundcloud.com/search?q=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+3",
+            "apple": "https://music.apple.com/de/search?term=D%E2%80%99Marc+Cantu+%26+Danny+Passarella+The+Future+Has+A+Silver+Lining+3"
+        }
+    },
+    {
+        "id": "Various Artists / UUUU 03 [2025]",
+        "artist": "Various Artists",
+        "album": "UUUU 03",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-32757483.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196879",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+UUUU+03",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+UUUU+03",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+UUUU+03",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+UUUU+03"
+        }
+    },
+    {
+        "id": "Kazza / Mysterious Stranger [2025]",
+        "artist": "Kazza",
+        "album": "Mysterious Stranger",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-2665942.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/196871",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Kazza+Mysterious+Stranger",
+            "bandcamp": "https://bandcamp.com/search?q=Kazza+Mysterious+Stranger",
+            "soundcloud": "https://soundcloud.com/search?q=Kazza+Mysterious+Stranger",
+            "apple": "https://music.apple.com/de/search?term=Kazza+Mysterious+Stranger"
+        }
+    },
+    {
+        "id": "Orlando Voorn / Wicked System [2025]",
+        "artist": "Orlando Voorn",
+        "album": "Wicked System",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35865886.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Bass",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196883",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Orlando+Voorn+Wicked+System",
+            "bandcamp": "https://bandcamp.com/search?q=Orlando+Voorn+Wicked+System",
+            "soundcloud": "https://soundcloud.com/search?q=Orlando+Voorn+Wicked+System",
+            "apple": "https://music.apple.com/de/search?term=Orlando+Voorn+Wicked+System"
+        }
+    },
+    {
+        "id": "MirrorLake / Crateria [2025]",
+        "artist": "MirrorLake",
+        "album": "Crateria",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-19674847.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Bass",
+            "Dub",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196869",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=MirrorLake+Crateria",
+            "bandcamp": "https://bandcamp.com/search?q=MirrorLake+Crateria",
+            "soundcloud": "https://soundcloud.com/search?q=MirrorLake+Crateria",
+            "apple": "https://music.apple.com/de/search?term=MirrorLake+Crateria"
+        }
+    },
+    {
+        "id": "Jimmy The Hand / Patience [2024]",
+        "artist": "Jimmy The Hand",
+        "album": "Patience",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-11634615.jpg",
+        "date_found": "2026-01-01",
+        "genres": [
+            "Electronic",
+            "House"
+        ],
+        "detail_url": "https://nodata.tv/196881",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Jimmy+The+Hand+Patience",
+            "bandcamp": "https://bandcamp.com/search?q=Jimmy+The+Hand+Patience",
+            "soundcloud": "https://soundcloud.com/search?q=Jimmy+The+Hand+Patience",
+            "apple": "https://music.apple.com/de/search?term=Jimmy+The+Hand+Patience"
+        }
+    },
+    {
         "id": "Low End Activist / Airdrop III [2025]",
         "artist": "Low End Activist",
         "album": "Airdrop III",
