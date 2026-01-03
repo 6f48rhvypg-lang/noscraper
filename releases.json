@@ -1,5 +1,149 @@
 [
     {
+        "id": "K-Lone / Sorry I Thought You Were Someone Else [2025]",
+        "artist": "K-Lone",
+        "album": "Sorry I Thought You Were Someone Else",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35658061.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Electronic",
+            "House",
+            "IDM",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196907",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=K-Lone+Sorry+I+Thought+You+Were+Someone+Else",
+            "bandcamp": "https://bandcamp.com/search?q=K-Lone+Sorry+I+Thought+You+Were+Someone+Else",
+            "soundcloud": "https://soundcloud.com/search?q=K-Lone+Sorry+I+Thought+You+Were+Someone+Else",
+            "apple": "https://music.apple.com/de/search?term=K-Lone+Sorry+I+Thought+You+Were+Someone+Else"
+        }
+    },
+    {
+        "id": "Orca – 5 On 4 / Open Space [2025]",
+        "artist": "Orca – 5 On 4",
+        "album": "Open Space",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-34705887.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Breakbeat",
+            "Electronic",
+            "Hardcore",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/196891",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Orca+%E2%80%93+5+On+4+Open+Space",
+            "bandcamp": "https://bandcamp.com/search?q=Orca+%E2%80%93+5+On+4+Open+Space",
+            "soundcloud": "https://soundcloud.com/search?q=Orca+%E2%80%93+5+On+4+Open+Space",
+            "apple": "https://music.apple.com/de/search?term=Orca+%E2%80%93+5+On+4+Open+Space"
+        }
+    },
+    {
+        "id": "Scott Fraser / Expanded [2025]",
+        "artist": "Scott Fraser",
+        "album": "Expanded",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35598847.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196875",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Scott+Fraser+Expanded",
+            "bandcamp": "https://bandcamp.com/search?q=Scott+Fraser+Expanded",
+            "soundcloud": "https://soundcloud.com/search?q=Scott+Fraser+Expanded",
+            "apple": "https://music.apple.com/de/search?term=Scott+Fraser+Expanded"
+        }
+    },
+    {
+        "id": "ex_libris / 001 [2025]",
+        "artist": "ex_libris",
+        "album": "001",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-34378669.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196877",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=ex_libris+001",
+            "bandcamp": "https://bandcamp.com/search?q=ex_libris+001",
+            "soundcloud": "https://soundcloud.com/search?q=ex_libris+001",
+            "apple": "https://music.apple.com/de/search?term=ex_libris+001"
+        }
+    },
+    {
+        "id": "Rezzett / Into The Boiling Darks [2025]",
+        "artist": "Rezzett",
+        "album": "Into The Boiling Darks",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35468890.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Ambient",
+            "Breakcore",
+            "Electronic",
+            "Experimental",
+            "Mixtape",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196901",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Rezzett+Into+The+Boiling+Darks",
+            "bandcamp": "https://bandcamp.com/search?q=Rezzett+Into+The+Boiling+Darks",
+            "soundcloud": "https://soundcloud.com/search?q=Rezzett+Into+The+Boiling+Darks",
+            "apple": "https://music.apple.com/de/search?term=Rezzett+Into+The+Boiling+Darks"
+        }
+    },
+    {
+        "id": "Unknown Artist / Grau 3: (Concrete Versions) [2025]",
+        "artist": "Unknown Artist",
+        "album": "Grau 3: (Concrete Versions)",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35631283.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Downtempo",
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196903",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Unknown+Artist+Grau+3%3A+%28Concrete+Versions%29",
+            "bandcamp": "https://bandcamp.com/search?q=Unknown+Artist+Grau+3%3A+%28Concrete+Versions%29",
+            "soundcloud": "https://soundcloud.com/search?q=Unknown+Artist+Grau+3%3A+%28Concrete+Versions%29",
+            "apple": "https://music.apple.com/de/search?term=Unknown+Artist+Grau+3%3A+%28Concrete+Versions%29"
+        }
+    },
+    {
+        "id": "Aa Sudd / Dsic [2025]",
+        "artist": "Aa Sudd",
+        "album": "Dsic",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-742377422.jpg",
+        "date_found": "2026-01-03",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196873",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Aa+Sudd+Dsic",
+            "bandcamp": "https://bandcamp.com/search?q=Aa+Sudd+Dsic",
+            "soundcloud": "https://soundcloud.com/search?q=Aa+Sudd+Dsic",
+            "apple": "https://music.apple.com/de/search?term=Aa+Sudd+Dsic"
+        }
+    },
+    {
         "id": "Martinou / Always There [2025]",
         "artist": "Martinou",
         "album": "Always There",
