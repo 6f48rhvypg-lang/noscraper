@@ -1,5 +1,147 @@
 [
     {
+        "id": "Sound Synthesis / Emotional Space [2025]",
+        "artist": "Sound Synthesis",
+        "album": "Emotional Space",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-35504476.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Acid",
+            "Ambient",
+            "Electronic",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196909",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sound+Synthesis+Emotional+Space",
+            "bandcamp": "https://bandcamp.com/search?q=Sound+Synthesis+Emotional+Space",
+            "soundcloud": "https://soundcloud.com/search?q=Sound+Synthesis+Emotional+Space",
+            "apple": "https://music.apple.com/de/search?term=Sound+Synthesis+Emotional+Space"
+        }
+    },
+    {
+        "id": "Ballista / Peak Hour [2019]",
+        "artist": "Ballista",
+        "album": "Peak Hour",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-13837084.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Ambient",
+            "Drone",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/196937",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Ballista+Peak+Hour",
+            "bandcamp": "https://bandcamp.com/search?q=Ballista+Peak+Hour",
+            "soundcloud": "https://soundcloud.com/search?q=Ballista+Peak+Hour",
+            "apple": "https://music.apple.com/de/search?term=Ballista+Peak+Hour"
+        }
+    },
+    {
+        "id": "HMC – 187 / 6AM [1996]",
+        "artist": "HMC – 187",
+        "album": "6AM",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-26640662.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Acid",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196948",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=HMC+%E2%80%93+187+6AM",
+            "bandcamp": "https://bandcamp.com/search?q=HMC+%E2%80%93+187+6AM",
+            "soundcloud": "https://soundcloud.com/search?q=HMC+%E2%80%93+187+6AM",
+            "apple": "https://music.apple.com/de/search?term=HMC+%E2%80%93+187+6AM"
+        }
+    },
+    {
+        "id": "Michael J. Blood / TRAX TAPE [2025]",
+        "artist": "Michael J. Blood",
+        "album": "TRAX TAPE",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-36031141.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Electronic",
+            "Experimental",
+            "House",
+            "Mixtape",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196939",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Michael+J.+Blood+TRAX+TAPE",
+            "bandcamp": "https://bandcamp.com/search?q=Michael+J.+Blood+TRAX+TAPE",
+            "soundcloud": "https://soundcloud.com/search?q=Michael+J.+Blood+TRAX+TAPE",
+            "apple": "https://music.apple.com/de/search?term=Michael+J.+Blood+TRAX+TAPE"
+        }
+    },
+    {
+        "id": "Convextion / Untitled [2002]",
+        "artist": "Convextion",
+        "album": "Untitled",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-75119422.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196941",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Convextion+Untitled",
+            "bandcamp": "https://bandcamp.com/search?q=Convextion+Untitled",
+            "soundcloud": "https://soundcloud.com/search?q=Convextion+Untitled",
+            "apple": "https://music.apple.com/de/search?term=Convextion+Untitled"
+        }
+    },
+    {
+        "id": "What We / Slats [2025]",
+        "artist": "What We",
+        "album": "Slats",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-34070446.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Minimal",
+            "Mixtape",
+            "Modern Classical"
+        ],
+        "detail_url": "https://nodata.tv/196929",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=What+We+Slats",
+            "bandcamp": "https://bandcamp.com/search?q=What+We+Slats",
+            "soundcloud": "https://soundcloud.com/search?q=What+We+Slats",
+            "apple": "https://music.apple.com/de/search?term=What+We+Slats"
+        }
+    },
+    {
+        "id": "Oak City Slums / Untitled [2026]",
+        "artist": "Oak City Slums",
+        "album": "Untitled",
+        "image": "https://nodata.tv/wp-content/uploads/2026/01/R-31960850.jpg",
+        "date_found": "2026-01-19",
+        "genres": [
+            "Bass",
+            "Beats",
+            "Electronic",
+            "Footwork"
+        ],
+        "detail_url": "https://nodata.tv/196927",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Oak+City+Slums+Untitled",
+            "bandcamp": "https://bandcamp.com/search?q=Oak+City+Slums+Untitled",
+            "soundcloud": "https://soundcloud.com/search?q=Oak+City+Slums+Untitled",
+            "apple": "https://music.apple.com/de/search?term=Oak+City+Slums+Untitled"
+        }
+    },
+    {
         "id": "K-Lone / Sorry I Thought You Were Someone Else [2025]",
         "artist": "K-Lone",
         "album": "Sorry I Thought You Were Someone Else",
