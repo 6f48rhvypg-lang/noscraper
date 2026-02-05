@@ -1,5 +1,147 @@
 [
     {
+        "id": "Human Space Machine & Sunju Hargun / HSH001 [2025]",
+        "artist": "Human Space Machine & Sunju Hargun",
+        "album": "HSH001",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36257992.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Electronic",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196951",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Human+Space+Machine+%26+Sunju+Hargun+HSH001",
+            "bandcamp": "https://bandcamp.com/search?q=Human+Space+Machine+%26+Sunju+Hargun+HSH001",
+            "soundcloud": "https://soundcloud.com/search?q=Human+Space+Machine+%26+Sunju+Hargun+HSH001",
+            "apple": "https://music.apple.com/de/search?term=Human+Space+Machine+%26+Sunju+Hargun+HSH001"
+        }
+    },
+    {
+        "id": "Various Artists / Supertitles [2025]",
+        "artist": "Various Artists",
+        "album": "Supertitles",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-35593693.jpeg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Field Recording",
+            "House",
+            "Leftfield"
+        ],
+        "detail_url": "https://nodata.tv/196995",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+Supertitles",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+Supertitles",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+Supertitles",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+Supertitles"
+        }
+    },
+    {
+        "id": "Richard Wolfsdorf – MDMA / Bosch [1996]",
+        "artist": "Richard Wolfsdorf – MDMA",
+        "album": "Bosch",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-35127542.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Electronic",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196925",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Richard+Wolfsdorf+%E2%80%93+MDMA+Bosch",
+            "bandcamp": "https://bandcamp.com/search?q=Richard+Wolfsdorf+%E2%80%93+MDMA+Bosch",
+            "soundcloud": "https://soundcloud.com/search?q=Richard+Wolfsdorf+%E2%80%93+MDMA+Bosch",
+            "apple": "https://music.apple.com/de/search?term=Richard+Wolfsdorf+%E2%80%93+MDMA+Bosch"
+        }
+    },
+    {
+        "id": "Dolo Percussion / Influences [2025]",
+        "artist": "Dolo Percussion",
+        "album": "Influences",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-34400308.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Electronic",
+            "Funk",
+            "House",
+            "Jazz",
+            "Mixtape",
+            "Soul"
+        ],
+        "detail_url": "https://nodata.tv/196993",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Dolo+Percussion+Influences",
+            "bandcamp": "https://bandcamp.com/search?q=Dolo+Percussion+Influences",
+            "soundcloud": "https://soundcloud.com/search?q=Dolo+Percussion+Influences",
+            "apple": "https://music.apple.com/de/search?term=Dolo+Percussion+Influences"
+        }
+    },
+    {
+        "id": "Sam Goku / Explorations 03 [2025]",
+        "artist": "Sam Goku",
+        "album": "Explorations 03",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36405420.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "House",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196965",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sam+Goku+Explorations+03",
+            "bandcamp": "https://bandcamp.com/search?q=Sam+Goku+Explorations+03",
+            "soundcloud": "https://soundcloud.com/search?q=Sam+Goku+Explorations+03",
+            "apple": "https://music.apple.com/de/search?term=Sam+Goku+Explorations+03"
+        }
+    },
+    {
+        "id": "Various Artists / Short Tracks [2025]",
+        "artist": "Various Artists",
+        "album": "Short Tracks",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36033277.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196983",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+Short+Tracks",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+Short+Tracks",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+Short+Tracks",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+Short+Tracks"
+        }
+    },
+    {
+        "id": "Amotik / Raat [2026]",
+        "artist": "Amotik",
+        "album": "Raat",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36325777.jpg",
+        "date_found": "2026-02-04",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196935",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Amotik+Raat",
+            "bandcamp": "https://bandcamp.com/search?q=Amotik+Raat",
+            "soundcloud": "https://soundcloud.com/search?q=Amotik+Raat",
+            "apple": "https://music.apple.com/de/search?term=Amotik+Raat"
+        }
+    },
+    {
         "id": "Pablo’s Eye / You Have A Yearning For Perfection [1995]",
         "artist": "Pablo’s Eye",
         "album": "You Have A Yearning For Perfection",
