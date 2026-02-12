@@ -1,5 +1,142 @@
 [
     {
+        "id": "Daphni / Butterfly [2026]",
+        "artist": "Daphni",
+        "album": "Butterfly",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-31414742.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Disco",
+            "Electronic",
+            "House"
+        ],
+        "detail_url": "https://nodata.tv/197013",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Daphni+Butterfly",
+            "bandcamp": "https://bandcamp.com/search?q=Daphni+Butterfly",
+            "soundcloud": "https://soundcloud.com/search?q=Daphni+Butterfly",
+            "apple": "https://music.apple.com/de/search?term=Daphni+Butterfly"
+        }
+    },
+    {
+        "id": "Skee Mask / ISS012 [2026]",
+        "artist": "Skee Mask",
+        "album": "ISS012",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36427009.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Ambient",
+            "Breakbeat",
+            "Drum n Bass",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196997",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Skee+Mask+ISS012",
+            "bandcamp": "https://bandcamp.com/search?q=Skee+Mask+ISS012",
+            "soundcloud": "https://soundcloud.com/search?q=Skee+Mask+ISS012",
+            "apple": "https://music.apple.com/de/search?term=Skee+Mask+ISS012"
+        }
+    },
+    {
+        "id": "Picture / Eeeeeeee [2026]",
+        "artist": "Picture",
+        "album": "Eeeeeeee",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36369949.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197015",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Picture+Eeeeeeee",
+            "bandcamp": "https://bandcamp.com/search?q=Picture+Eeeeeeee",
+            "soundcloud": "https://soundcloud.com/search?q=Picture+Eeeeeeee",
+            "apple": "https://music.apple.com/de/search?term=Picture+Eeeeeeee"
+        }
+    },
+    {
+        "id": "ex_libris / 002 [2025]",
+        "artist": "ex_libris",
+        "album": "002",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-34378738.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197027",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=ex_libris+002",
+            "bandcamp": "https://bandcamp.com/search?q=ex_libris+002",
+            "soundcloud": "https://soundcloud.com/search?q=ex_libris+002",
+            "apple": "https://music.apple.com/de/search?term=ex_libris+002"
+        }
+    },
+    {
+        "id": "Kai Galactic / Obsessed [2026]",
+        "artist": "Kai Galactic",
+        "album": "Obsessed",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-33025386.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Ambient",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197025",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Kai+Galactic+Obsessed",
+            "bandcamp": "https://bandcamp.com/search?q=Kai+Galactic+Obsessed",
+            "soundcloud": "https://soundcloud.com/search?q=Kai+Galactic+Obsessed",
+            "apple": "https://music.apple.com/de/search?term=Kai+Galactic+Obsessed"
+        }
+    },
+    {
+        "id": "SnPLO / Infinity Substance [2026]",
+        "artist": "SnPLO",
+        "album": "Infinity Substance",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36050374.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196971",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=SnPLO+Infinity+Substance",
+            "bandcamp": "https://bandcamp.com/search?q=SnPLO+Infinity+Substance",
+            "soundcloud": "https://soundcloud.com/search?q=SnPLO+Infinity+Substance",
+            "apple": "https://music.apple.com/de/search?term=SnPLO+Infinity+Substance"
+        }
+    },
+    {
+        "id": "Hercegovina / Perseverance [2025]",
+        "artist": "Hercegovina",
+        "album": "Perseverance",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-33937251.jpg",
+        "date_found": "2026-02-11",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/196905",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Hercegovina+Perseverance",
+            "bandcamp": "https://bandcamp.com/search?q=Hercegovina+Perseverance",
+            "soundcloud": "https://soundcloud.com/search?q=Hercegovina+Perseverance",
+            "apple": "https://music.apple.com/de/search?term=Hercegovina+Perseverance"
+        }
+    },
+    {
         "id": "Human Space Machine & Sunju Hargun / HSH001 [2025]",
         "artist": "Human Space Machine & Sunju Hargun",
         "album": "HSH001",
