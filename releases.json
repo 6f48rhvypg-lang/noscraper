@@ -1,5 +1,148 @@
 [
     {
+        "id": "Shinichi Atobe / P&S002 [2025]",
+        "artist": "Shinichi Atobe",
+        "album": "P&S002",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36238105.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "House",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197023",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Shinichi+Atobe+P%26S002",
+            "bandcamp": "https://bandcamp.com/search?q=Shinichi+Atobe+P%26S002",
+            "soundcloud": "https://soundcloud.com/search?q=Shinichi+Atobe+P%26S002",
+            "apple": "https://music.apple.com/de/search?term=Shinichi+Atobe+P%26S002"
+        }
+    },
+    {
+        "id": "Surgeons Girl / A Moment To Machine [2026]",
+        "artist": "Surgeons Girl",
+        "album": "A Moment To Machine",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36461976.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197049",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Surgeons+Girl+A+Moment+To+Machine",
+            "bandcamp": "https://bandcamp.com/search?q=Surgeons+Girl+A+Moment+To+Machine",
+            "soundcloud": "https://soundcloud.com/search?q=Surgeons+Girl+A+Moment+To+Machine",
+            "apple": "https://music.apple.com/de/search?term=Surgeons+Girl+A+Moment+To+Machine"
+        }
+    },
+    {
+        "id": "R-Zone / R-Zone 04 [2013]",
+        "artist": "R-Zone",
+        "album": "R-Zone 04",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-4774199.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197047",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=R-Zone+R-Zone+04",
+            "bandcamp": "https://bandcamp.com/search?q=R-Zone+R-Zone+04",
+            "soundcloud": "https://soundcloud.com/search?q=R-Zone+R-Zone+04",
+            "apple": "https://music.apple.com/de/search?term=R-Zone+R-Zone+04"
+        }
+    },
+    {
+        "id": "Guild 44 / Viscous Golden Oil [2025]",
+        "artist": "Guild 44",
+        "album": "Viscous Golden Oil",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-35649466.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Ambient",
+            "Avantgarde",
+            "Electronic",
+            "Experimental",
+            "Jazz",
+            "Mixtape",
+            "Modern Classical"
+        ],
+        "detail_url": "https://nodata.tv/197033",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Guild+44+Viscous+Golden+Oil",
+            "bandcamp": "https://bandcamp.com/search?q=Guild+44+Viscous+Golden+Oil",
+            "soundcloud": "https://soundcloud.com/search?q=Guild+44+Viscous+Golden+Oil",
+            "apple": "https://music.apple.com/de/search?term=Guild+44+Viscous+Golden+Oil"
+        }
+    },
+    {
+        "id": "Scam Dust / Gastric Pulse [2026]",
+        "artist": "Scam Dust",
+        "album": "Gastric Pulse",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-30514246.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197019",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Scam+Dust+Gastric+Pulse",
+            "bandcamp": "https://bandcamp.com/search?q=Scam+Dust+Gastric+Pulse",
+            "soundcloud": "https://soundcloud.com/search?q=Scam+Dust+Gastric+Pulse",
+            "apple": "https://music.apple.com/de/search?term=Scam+Dust+Gastric+Pulse"
+        }
+    },
+    {
+        "id": "Brendon Moeller / Soft Collapse Of Meaning [2026]",
+        "artist": "Brendon Moeller",
+        "album": "Soft Collapse Of Meaning",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-35592163.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Acid",
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Jazz",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197051",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Brendon+Moeller+Soft+Collapse+Of+Meaning",
+            "bandcamp": "https://bandcamp.com/search?q=Brendon+Moeller+Soft+Collapse+Of+Meaning",
+            "soundcloud": "https://soundcloud.com/search?q=Brendon+Moeller+Soft+Collapse+Of+Meaning",
+            "apple": "https://music.apple.com/de/search?term=Brendon+Moeller+Soft+Collapse+Of+Meaning"
+        }
+    },
+    {
+        "id": "Various Artists / UUUU 02 [2024]",
+        "artist": "Various Artists",
+        "album": "UUUU 02",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-32323419.jpg",
+        "date_found": "2026-02-17",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197045",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+UUUU+02",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+UUUU+02",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+UUUU+02",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+UUUU+02"
+        }
+    },
+    {
         "id": "Daphni / Butterfly [2026]",
         "artist": "Daphni",
         "album": "Butterfly",
