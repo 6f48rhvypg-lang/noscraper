@@ -1,5 +1,146 @@
 [
     {
+        "id": "Various Artists / Ende Gut Alles Gut [2026]",
+        "artist": "Various Artists",
+        "album": "Ende Gut Alles Gut",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36461259.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "House",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197053",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+Ende+Gut+Alles+Gut",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+Ende+Gut+Alles+Gut",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+Ende+Gut+Alles+Gut",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+Ende+Gut+Alles+Gut"
+        }
+    },
+    {
+        "id": "DJ Hyperactive / Don’t Panic [1996]",
+        "artist": "DJ Hyperactive",
+        "album": "Don’t Panic",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-2786964.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Acid",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197017",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=DJ+Hyperactive+Don%E2%80%99t+Panic",
+            "bandcamp": "https://bandcamp.com/search?q=DJ+Hyperactive+Don%E2%80%99t+Panic",
+            "soundcloud": "https://soundcloud.com/search?q=DJ+Hyperactive+Don%E2%80%99t+Panic",
+            "apple": "https://music.apple.com/de/search?term=DJ+Hyperactive+Don%E2%80%99t+Panic"
+        }
+    },
+    {
+        "id": "Nathan Fake / Evaporator [2026]",
+        "artist": "Nathan Fake",
+        "album": "Evaporator",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-2502657.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "IDM",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197074",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Nathan+Fake+Evaporator",
+            "bandcamp": "https://bandcamp.com/search?q=Nathan+Fake+Evaporator",
+            "soundcloud": "https://soundcloud.com/search?q=Nathan+Fake+Evaporator",
+            "apple": "https://music.apple.com/de/search?term=Nathan+Fake+Evaporator"
+        }
+    },
+    {
+        "id": "Surface Access / Transfer [2026]",
+        "artist": "Surface Access",
+        "album": "Transfer",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36230809.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/196931",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Surface+Access+Transfer",
+            "bandcamp": "https://bandcamp.com/search?q=Surface+Access+Transfer",
+            "soundcloud": "https://soundcloud.com/search?q=Surface+Access+Transfer",
+            "apple": "https://music.apple.com/de/search?term=Surface+Access+Transfer"
+        }
+    },
+    {
+        "id": "Bruce / four more then four [2026]",
+        "artist": "Bruce",
+        "album": "four more then four",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-3986723.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Electronic",
+            "Experimental",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197072",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Bruce+four+more+then+four",
+            "bandcamp": "https://bandcamp.com/search?q=Bruce+four+more+then+four",
+            "soundcloud": "https://soundcloud.com/search?q=Bruce+four+more+then+four",
+            "apple": "https://music.apple.com/de/search?term=Bruce+four+more+then+four"
+        }
+    },
+    {
+        "id": "Harmony – Ecstasy / Solar [2026]",
+        "artist": "Harmony – Ecstasy",
+        "album": "Solar",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-36493099.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/197078",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Harmony+%E2%80%93+Ecstasy+Solar",
+            "bandcamp": "https://bandcamp.com/search?q=Harmony+%E2%80%93+Ecstasy+Solar",
+            "soundcloud": "https://soundcloud.com/search?q=Harmony+%E2%80%93+Ecstasy+Solar",
+            "apple": "https://music.apple.com/de/search?term=Harmony+%E2%80%93+Ecstasy+Solar"
+        }
+    },
+    {
+        "id": "flywheel / Harbinger [2026]",
+        "artist": "flywheel",
+        "album": "Harbinger",
+        "image": "https://nodata.tv/wp-content/uploads/2026/02/R-11478242.jpg",
+        "date_found": "2026-02-24",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197070",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=flywheel+Harbinger",
+            "bandcamp": "https://bandcamp.com/search?q=flywheel+Harbinger",
+            "soundcloud": "https://soundcloud.com/search?q=flywheel+Harbinger",
+            "apple": "https://music.apple.com/de/search?term=flywheel+Harbinger"
+        }
+    },
+    {
         "id": "Shinichi Atobe / P&S002 [2025]",
         "artist": "Shinichi Atobe",
         "album": "P&S002",
