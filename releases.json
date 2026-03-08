@@ -1,5 +1,148 @@
 [
     {
+        "id": "Modeselektor / Classics Vol. 1 [2026]",
+        "artist": "Modeselektor",
+        "album": "Classics Vol. 1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-36693706.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Downtempo",
+            "Electronic",
+            "Leftfield",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197109",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Modeselektor+Classics+Vol.+1",
+            "bandcamp": "https://bandcamp.com/search?q=Modeselektor+Classics+Vol.+1",
+            "soundcloud": "https://soundcloud.com/search?q=Modeselektor+Classics+Vol.+1",
+            "apple": "https://music.apple.com/de/search?term=Modeselektor+Classics+Vol.+1"
+        }
+    },
+    {
+        "id": "Pugilist / Maternal [2026]",
+        "artist": "Pugilist",
+        "album": "Maternal",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-36662410.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Breaks",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197076",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Pugilist+Maternal",
+            "bandcamp": "https://bandcamp.com/search?q=Pugilist+Maternal",
+            "soundcloud": "https://soundcloud.com/search?q=Pugilist+Maternal",
+            "apple": "https://music.apple.com/de/search?term=Pugilist+Maternal"
+        }
+    },
+    {
+        "id": "re:ni & BiggaBush / Bass Is The Space [2026]",
+        "artist": "re:ni & BiggaBush",
+        "album": "Bass Is The Space",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-14809708.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Ambient",
+            "Breakbeat",
+            "Drum n Bass",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197101",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=re%3Ani+%26+BiggaBush+Bass+Is+The+Space",
+            "bandcamp": "https://bandcamp.com/search?q=re%3Ani+%26+BiggaBush+Bass+Is+The+Space",
+            "soundcloud": "https://soundcloud.com/search?q=re%3Ani+%26+BiggaBush+Bass+Is+The+Space",
+            "apple": "https://music.apple.com/de/search?term=re%3Ani+%26+BiggaBush+Bass+Is+The+Space"
+        }
+    },
+    {
+        "id": "Robert Henke / Layering Buddha [2026]",
+        "artist": "Robert Henke",
+        "album": "Layering Buddha",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-36460806.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/197107",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Robert+Henke+Layering+Buddha",
+            "bandcamp": "https://bandcamp.com/search?q=Robert+Henke+Layering+Buddha",
+            "soundcloud": "https://soundcloud.com/search?q=Robert+Henke+Layering+Buddha",
+            "apple": "https://music.apple.com/de/search?term=Robert+Henke+Layering+Buddha"
+        }
+    },
+    {
+        "id": "Stones Taro / Foglore#1 [2026]",
+        "artist": "Stones Taro",
+        "album": "Foglore#1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-17985925.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "House",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/197097",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Stones+Taro+Foglore%231",
+            "bandcamp": "https://bandcamp.com/search?q=Stones+Taro+Foglore%231",
+            "soundcloud": "https://soundcloud.com/search?q=Stones+Taro+Foglore%231",
+            "apple": "https://music.apple.com/de/search?term=Stones+Taro+Foglore%231"
+        }
+    },
+    {
+        "id": "Tile Plazas / Dream Tendrils [2024]",
+        "artist": "Tile Plazas",
+        "album": "Dream Tendrils",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-32567511.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Ambient",
+            "Drone",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197080",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Tile+Plazas+Dream+Tendrils",
+            "bandcamp": "https://bandcamp.com/search?q=Tile+Plazas+Dream+Tendrils",
+            "soundcloud": "https://soundcloud.com/search?q=Tile+Plazas+Dream+Tendrils",
+            "apple": "https://music.apple.com/de/search?term=Tile+Plazas+Dream+Tendrils"
+        }
+    },
+    {
+        "id": "Space Drum Meditation / SDM007 [2026]",
+        "artist": "Space Drum Meditation",
+        "album": "SDM007",
+        "image": "https://nodata.tv/wp-content/uploads/2026/03/R-36537771.jpg",
+        "date_found": "2026-03-08",
+        "genres": [
+            "Electronic",
+            "Techno",
+            "Trance",
+            "Tribal"
+        ],
+        "detail_url": "https://nodata.tv/197103",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Space+Drum+Meditation+SDM007",
+            "bandcamp": "https://bandcamp.com/search?q=Space+Drum+Meditation+SDM007",
+            "soundcloud": "https://soundcloud.com/search?q=Space+Drum+Meditation+SDM007",
+            "apple": "https://music.apple.com/de/search?term=Space+Drum+Meditation+SDM007"
+        }
+    },
+    {
         "id": "Various Artists / Ende Gut Alles Gut [2026]",
         "artist": "Various Artists",
         "album": "Ende Gut Alles Gut",
