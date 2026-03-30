@@ -1,7 +1,9 @@
 import streamlit as st
 import json
 import os
+import random
 import urllib.parse
+import streamlit.components.v1 as components
 import extra_streamlit_components as stx
 from datetime import datetime, timedelta
 # Wir importieren den Scraper, um bei Bedarf live nachzuladen
@@ -347,6 +349,139 @@ st.markdown("""
         border-color: rgba(255,255,255,0.2);
         color: white;
     }
+
+    /* ===== RADIO MODE ===== */
+    .radio-player {
+        background: linear-gradient(145deg, rgba(25,25,32,0.95) 0%, rgba(15,15,20,0.98) 100%);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .radio-cover-wrap {
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 1;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    .radio-cover-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .radio-artist {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #fff;
+        margin: 0 0 4px;
+        line-height: 1.2;
+    }
+
+    .radio-album {
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.55);
+        margin: 0 0 14px;
+        font-style: italic;
+    }
+
+    .radio-genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 18px;
+    }
+
+    .radio-genre-pill {
+        background: rgba(255,84,84,0.15);
+        color: rgba(255,150,150,0.9);
+        padding: 4px 12px;
+        border-radius: 100px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        border: 1px solid rgba(255,84,84,0.2);
+    }
+
+    .radio-nav {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 0 4px;
+    }
+
+    .radio-track-info {
+        text-align: center;
+        color: rgba(255,255,255,0.35);
+        font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        flex: 1;
+    }
+
+    .queue-section {
+        margin-top: 1.5rem;
+    }
+
+    .queue-label {
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba(255,255,255,0.3);
+        margin-bottom: 12px;
+    }
+
+    .queue-card {
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .queue-card:hover {
+        background: rgba(255,255,255,0.07);
+        border-color: rgba(255,255,255,0.14);
+        transform: translateY(-2px);
+    }
+
+    .queue-card img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        display: block;
+    }
+
+    .queue-card-info {
+        padding: 8px 10px;
+    }
+
+    .queue-artist {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: rgba(255,255,255,0.85);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .queue-album {
+        font-size: 0.65rem;
+        color: rgba(255,255,255,0.4);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Tab styling */
+    div[data-testid="stTabs"] button[data-baseweb="tab"] {
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -370,16 +505,23 @@ COOKIE_EXPIRY_DAYS = 365
 if 'cookie_loaded' not in st.session_state:
     st.session_state.cookie_loaded = False
     st.session_state.seen_releases = []
+    st.session_state.cookie_attempts = 0
 
-# Attempt to sync cookie value on each run until successful
-# This handles the async nature of extra-streamlit-components
+# Attempt to sync cookie value on each run until successful or after 3 attempts.
+# extra-streamlit-components returns None until its JS component fires back,
+# so we cap retries to avoid an infinite rerun loop on first visit (no cookie).
 if not st.session_state.cookie_loaded:
     cookie_val = cookie_manager.get(cookie=COOKIE_NAME)
+    st.session_state.cookie_attempts += 1
+
     if cookie_val is not None:
         try:
             st.session_state.seen_releases = json.loads(cookie_val)
         except (json.JSONDecodeError, TypeError):
             st.session_state.seen_releases = []
+        st.session_state.cookie_loaded = True
+    elif st.session_state.cookie_attempts >= 3:
+        # No cookie found after 3 reruns — assume first visit, stop waiting
         st.session_state.cookie_loaded = True
 
 if 'all_releases' not in st.session_state:
@@ -388,8 +530,16 @@ if 'all_releases' not in st.session_state:
     # Startpunkt für Live-Scraping: Berechnung basierend auf Items pro Seite (~7-10)
     st.session_state.current_scrape_page = max(1, len(initial_data) // 8)
 
-if 'page_size' not in st.session_state: 
+if 'page_size' not in st.session_state:
     st.session_state.page_size = 12
+
+# --- Radio Session State ---
+if 'radio_index' not in st.session_state:
+    st.session_state.radio_index = 0
+if 'radio_shuffle' not in st.session_state:
+    st.session_state.radio_shuffle = True
+if 'radio_playlist' not in st.session_state:
+    st.session_state.radio_playlist = []
 
 # --- Helper Functions ---
 def _save_seen_cookie():
@@ -426,6 +576,40 @@ def get_soundcloud_links(artist: str, album: str) -> dict:
     mobile_url = f"https://m.soundcloud.com/search?q={encoded_query}"
     
     return {"web": web_url, "mobile": mobile_url}
+
+def init_radio_playlist():
+    """Build or rebuild the radio playlist (shuffle or sequential)."""
+    n = len(st.session_state.all_releases)
+    indices = list(range(n))
+    if st.session_state.radio_shuffle:
+        random.shuffle(indices)
+    st.session_state.radio_playlist = indices
+    st.session_state.radio_index = 0
+
+
+def ensure_radio_playlist():
+    """Make sure playlist is valid and covers all current releases."""
+    n = len(st.session_state.all_releases)
+    if not st.session_state.radio_playlist or len(st.session_state.radio_playlist) != n:
+        init_radio_playlist()
+
+
+def radio_navigate(direction: int):
+    """Move radio cursor. direction: +1 next, -1 prev."""
+    ensure_radio_playlist()
+    total = len(st.session_state.radio_playlist)
+    st.session_state.radio_index = (st.session_state.radio_index + direction) % total
+
+
+def get_current_radio_release():
+    """Return the currently active release in radio mode."""
+    ensure_radio_playlist()
+    if not st.session_state.all_releases:
+        return None
+    idx = st.session_state.radio_index % len(st.session_state.radio_playlist)
+    actual = st.session_state.radio_playlist[idx]
+    return st.session_state.all_releases[actual]
+
 
 def render_release_card(release: dict, is_seen: bool, card_idx: int) -> str:
     """
@@ -473,199 +657,349 @@ def render_release_card(release: dict, is_seen: bool, card_idx: int) -> str:
     '''
     return html
 
-# --- Header & Search ---
+# --- Header ---
 st.markdown("""
 <div class="app-header">
     <h1 class="app-title">🎵 Nodata Radar</h1>
 </div>
 """, unsafe_allow_html=True)
 
-# Search Input
-search = st.text_input("🔍 Suche nach Artist oder Album...", "", label_visibility="collapsed", placeholder="🔍 Suche nach Artist oder Album...")
+# --- Tabs ---
+tab_browse, tab_radio = st.tabs(["📀 Browse", "📻 Radio"])
 
-# Filtering
-if search:
-    search_lower = search.lower()
-    filtered_data = [
-        r for r in st.session_state.all_releases 
-        if search_lower in r.get('artist', '').lower() 
-        or search_lower in r.get('album', '').lower()
-        or any(search_lower in g.lower() for g in r.get('genres', []))
-    ]
-    is_search_mode = True
-else:
-    filtered_data = st.session_state.all_releases[:st.session_state.page_size]
-    is_search_mode = False
+# ══════════════════════════════════════════════════════
+# BROWSE TAB
+# ══════════════════════════════════════════════════════
+with tab_browse:
+    # Search Input
+    search = st.text_input("🔍 Suche nach Artist oder Album...", "", label_visibility="collapsed", placeholder="🔍 Suche nach Artist oder Album...")
 
-# Stats
-total_count = len(st.session_state.all_releases)
-seen_count = len(st.session_state.seen_releases)
-st.caption(f"📀 {total_count} Releases • ✅ {seen_count} gesehen")
+    # Filtering
+    if search:
+        search_lower = search.lower()
+        filtered_data = [
+            r for r in st.session_state.all_releases
+            if search_lower in r.get('artist', '').lower()
+            or search_lower in r.get('album', '').lower()
+            or any(search_lower in g.lower() for g in r.get('genres', []))
+        ]
+        is_search_mode = True
+    else:
+        filtered_data = st.session_state.all_releases[:st.session_state.page_size]
+        is_search_mode = False
 
-# --- Main Grid ---
-if not filtered_data:
-    st.info("🔍 Keine Releases gefunden. Versuche einen anderen Suchbegriff.")
-else:
-    # Responsive grid using CSS columns
-    cols = st.columns(4)
-    
-    for idx, release in enumerate(filtered_data):
-        col_index = idx % 4
-        is_seen = release['id'] in st.session_state.seen_releases
-        
-        with cols[col_index]:
-            # Card Container mit Opacity-Handling
-            card_opacity = "0.4" if is_seen else "1"
-            
-            with st.container(border=True):
-                # --- SEEN BADGE ---
-                if is_seen:
-                    st.markdown(
-                        '<div style="background:rgba(74,222,128,0.15); color:#4ade80; padding:4px 10px; '
-                        'border-radius:20px; font-size:0.7rem; font-weight:600; display:inline-block; '
-                        'margin-bottom:8px;">✓ Gesehen</div>',
-                        unsafe_allow_html=True
-                    )
-                
-                # --- COVER IMAGE ---
-                image_url = release.get('image') or 'https://placehold.co/400x400/1a1a1f/444?text=No+Cover'
-                st.markdown(f'<div style="opacity:{card_opacity}; transition:opacity 0.3s;">', unsafe_allow_html=True)
-                st.image(image_url, use_container_width=True)
-                st.markdown('</div>', unsafe_allow_html=True)
-                
-                # --- ARTIST & ALBUM ---
-                artist = release.get('artist', 'Unknown')
-                album = release.get('album', '')
-                
-                st.markdown(f"**{artist}**")
-                if album:
-                    st.caption(album)
-                
-                # --- GENRE PILLS ---
-                genres = release.get('genres', [])[:4]
-                if genres:
-                    pills_html = "".join([
-                        f'<span style="background:rgba(128,128,128,0.2); color:inherit; '
-                        f'padding:3px 10px; border-radius:100px; font-size:0.65rem; font-weight:500; '
-                        f'text-transform:uppercase; letter-spacing:0.04em; margin-right:5px; '
-                        f'display:inline-block; margin-bottom:5px; border:1px solid rgba(128,128,128,0.3);">{g}</span>'
-                        for g in genres
-                    ])
-                    st.markdown(f'<div style="margin-top:8px;">{pills_html}</div>', unsafe_allow_html=True)
-                
-                # --- ACTION BUTTONS ---
-                col_play, col_links, col_check = st.columns([2, 2, 1])
-                
-                with col_play:
-                    youtube_url = release.get('links', {}).get('youtube', '#')
-                    st.link_button("▶️ Play", youtube_url, use_container_width=True)
-                
-                with col_links:
-                    # Links Popover mit SoundCloud Fix
-                    with st.popover("🔗", use_container_width=True):
-                        st.markdown("**Suche auf:**")
-                        
-                        # Bandcamp
-                        bandcamp_url = release.get('links', {}).get('bandcamp', '#')
-                        st.markdown(f"🎸 [Bandcamp]({bandcamp_url})")
-                        
-                        # SoundCloud - Mobile-optimized links
-                        sc_links = get_soundcloud_links(artist, album)
-                        st.markdown(f"☁️ [SoundCloud]({sc_links['mobile']})")
-                        
-                        # Apple Music
-                        apple_url = release.get('links', {}).get('apple', '#')
-                        st.markdown(f"🍎 [Apple Music]({apple_url})")
-                        
-                        # Original Link
-                        if release.get('detail_url'):
-                            st.divider()
-                            st.markdown(f"🌐 [Nodata Original]({release['detail_url']})")
-                
-                with col_check:
-                    # Low-profile icon button für Mark as Seen
-                    btn_icon = "✓" if is_seen else "○"
-                    btn_type = "secondary" if is_seen else "primary"
-                    btn_help = "Als ungesehen markieren" if is_seen else "Als gesehen markieren"
-                    
-                    if st.button(btn_icon, key=f"seen_{idx}_{release['id'][:20]}", type=btn_type, help=btn_help, use_container_width=True):
-                        if is_seen:
-                            unmark_as_seen(release['id'])
-                        else:
-                            mark_as_seen(release['id'])
-                        st.rerun()
+    # Stats
+    total_count = len(st.session_state.all_releases)
+    seen_count = len(st.session_state.seen_releases)
+    st.caption(f"📀 {total_count} Releases • ✅ {seen_count} gesehen")
 
-# --- Footer / Load More Logic ---
-if not is_search_mode:
-    st.markdown("<br>", unsafe_allow_html=True)
-    
-    # Centered Load More Section
-    _, col_center, _ = st.columns([1, 2, 1])
-    
-    with col_center:
-        has_more_local = len(st.session_state.all_releases) > st.session_state.page_size
-        remaining = len(st.session_state.all_releases) - st.session_state.page_size
-        
-        # Show count of remaining if any
-        if has_more_local:
-            btn_text = f"👇 Mehr laden ({remaining} weitere)"
-        else:
-            btn_text = "🔍 Im Archiv suchen..."
-        
-        if st.button(btn_text, use_container_width=True, type="secondary"):
+    # --- Main Grid ---
+    if not filtered_data:
+        st.info("🔍 Keine Releases gefunden. Versuche einen anderen Suchbegriff.")
+    else:
+        cols = st.columns(4)
+
+        for idx, release in enumerate(filtered_data):
+            col_index = idx % 4
+            is_seen = release['id'] in st.session_state.seen_releases
+
+            with cols[col_index]:
+                card_opacity = "0.4" if is_seen else "1"
+
+                with st.container(border=True):
+                    # --- SEEN BADGE ---
+                    if is_seen:
+                        st.markdown(
+                            '<div style="background:rgba(74,222,128,0.15); color:#4ade80; padding:4px 10px; '
+                            'border-radius:20px; font-size:0.7rem; font-weight:600; display:inline-block; '
+                            'margin-bottom:8px;">✓ Gesehen</div>',
+                            unsafe_allow_html=True
+                        )
+
+                    # --- COVER IMAGE ---
+                    image_url = release.get('image') or 'https://placehold.co/400x400/1a1a1f/444?text=No+Cover'
+                    st.markdown(f'<div style="opacity:{card_opacity}; transition:opacity 0.3s;">', unsafe_allow_html=True)
+                    st.image(image_url, use_container_width=True)
+                    st.markdown('</div>', unsafe_allow_html=True)
+
+                    # --- ARTIST & ALBUM ---
+                    artist = release.get('artist', 'Unknown')
+                    album = release.get('album', '')
+
+                    st.markdown(f"**{artist}**")
+                    if album:
+                        st.caption(album)
+
+                    # --- GENRE PILLS ---
+                    genres = release.get('genres', [])[:4]
+                    if genres:
+                        pills_html = "".join([
+                            f'<span style="background:rgba(128,128,128,0.2); color:inherit; '
+                            f'padding:3px 10px; border-radius:100px; font-size:0.65rem; font-weight:500; '
+                            f'text-transform:uppercase; letter-spacing:0.04em; margin-right:5px; '
+                            f'display:inline-block; margin-bottom:5px; border:1px solid rgba(128,128,128,0.3);">{g}</span>'
+                            for g in genres
+                        ])
+                        st.markdown(f'<div style="margin-top:8px;">{pills_html}</div>', unsafe_allow_html=True)
+
+                    # --- ACTION BUTTONS ---
+                    col_play, col_links, col_check = st.columns([2, 2, 1])
+
+                    with col_play:
+                        youtube_url = release.get('links', {}).get('youtube', '#')
+                        st.link_button("▶️ Play", youtube_url, use_container_width=True)
+
+                    with col_links:
+                        with st.popover("🔗", use_container_width=True):
+                            st.markdown("**Suche auf:**")
+                            bandcamp_url = release.get('links', {}).get('bandcamp', '#')
+                            st.markdown(f"🎸 [Bandcamp]({bandcamp_url})")
+                            sc_links = get_soundcloud_links(artist, album)
+                            st.markdown(f"☁️ [SoundCloud]({sc_links['mobile']})")
+                            apple_url = release.get('links', {}).get('apple', '#')
+                            st.markdown(f"🍎 [Apple Music]({apple_url})")
+                            if release.get('detail_url'):
+                                st.divider()
+                                st.markdown(f"🌐 [Nodata Original]({release['detail_url']})")
+
+                    with col_check:
+                        btn_icon = "✓" if is_seen else "○"
+                        btn_type = "secondary" if is_seen else "primary"
+                        btn_help = "Als ungesehen markieren" if is_seen else "Als gesehen markieren"
+
+                        if st.button(btn_icon, key=f"seen_{idx}_{release['id'][:20]}", type=btn_type, help=btn_help, use_container_width=True):
+                            if is_seen:
+                                unmark_as_seen(release['id'])
+                            else:
+                                mark_as_seen(release['id'])
+                            st.rerun()
+
+    # --- Load More / Footer ---
+    if not is_search_mode:
+        st.markdown("<br>", unsafe_allow_html=True)
+
+        _, col_center, _ = st.columns([1, 2, 1])
+
+        with col_center:
+            has_more_local = len(st.session_state.all_releases) > st.session_state.page_size
+            remaining = len(st.session_state.all_releases) - st.session_state.page_size
+
             if has_more_local:
-                st.session_state.page_size += 12
-                st.rerun()
+                btn_text = f"👇 Mehr laden ({remaining} weitere)"
             else:
-                # --- DEEP SEARCH LOOP ---
-                max_attempts = 20
-                with st.status("🔍 Durchsuche Nodata-Archiv...", expanded=True) as status:
-                    found_count = 0
-                    attempts = 0
-                    p_bar = status.progress(0)
-                    
-                    while found_count < 8 and attempts < max_attempts:
-                        attempts += 1
-                        page_to_scrape = st.session_state.current_scrape_page + 1
-                        
-                        status.write(f"📄 Scanne Seite {page_to_scrape}...")
-                        p_bar.progress(min(attempts * 5, 100))
-                        
-                        try:
-                            # Live Scraping der nächsten Seite (mit Deep Scrape für Genres)
-                            items = scrape_nodata(pages=1, start_page=page_to_scrape, deep_scrape=True)
-                            
-                            if not items: 
-                                status.write("📭 Ende des Archivs erreicht.")
+                btn_text = "🔍 Im Archiv suchen..."
+
+            if st.button(btn_text, use_container_width=True, type="secondary"):
+                if has_more_local:
+                    st.session_state.page_size += 12
+                    st.rerun()
+                else:
+                    max_attempts = 20
+                    with st.status("🔍 Durchsuche Nodata-Archiv...", expanded=True) as status:
+                        found_count = 0
+                        attempts = 0
+                        p_bar = status.progress(0)
+
+                        while found_count < 8 and attempts < max_attempts:
+                            attempts += 1
+                            page_to_scrape = st.session_state.current_scrape_page + 1
+
+                            status.write(f"📄 Scanne Seite {page_to_scrape}...")
+                            p_bar.progress(min(attempts * 5, 100))
+
+                            try:
+                                items = scrape_nodata(pages=1, start_page=page_to_scrape, deep_scrape=True)
+
+                                if not items:
+                                    status.write("📭 Ende des Archivs erreicht.")
+                                    break
+
+                                current_ids = {x['id'] for x in st.session_state.all_releases}
+                                new_items = [x for x in items if x['id'] not in current_ids]
+
+                                if new_items:
+                                    st.session_state.all_releases.extend(new_items)
+                                    found_count += len(new_items)
+                                    status.write(f"✅ {len(new_items)} neue Releases gefunden!")
+
+                                st.session_state.current_scrape_page += 1
+
+                            except Exception as e:
+                                status.error(f"⚠️ Fehler: {e}")
                                 break
-                            
-                            # Filter: Nur IDs, die wir noch nicht im aktuellen State haben
-                            current_ids = {x['id'] for x in st.session_state.all_releases}
-                            new_items = [x for x in items if x['id'] not in current_ids]
-                            
-                            if new_items:
-                                st.session_state.all_releases.extend(new_items)
-                                found_count += len(new_items)
-                                status.write(f"✅ {len(new_items)} neue Releases gefunden!")
-                            
-                            # Zähler hochsetzen für nächsten Loop
-                            st.session_state.current_scrape_page += 1
-                            
-                        except Exception as e:
-                            status.error(f"⚠️ Fehler: {e}")
-                            break
-                    
-                    if found_count > 0:
-                        st.session_state.page_size += found_count
-                        status.update(label=f"🎉 {found_count} neue Releases geladen!", state="complete")
-                        st.rerun()
+
+                        if found_count > 0:
+                            st.session_state.page_size += found_count
+                            status.update(label=f"🎉 {found_count} neue Releases geladen!", state="complete")
+                            st.rerun()
+                        else:
+                            status.update(label="😔 Keine neuen Releases im Archiv gefunden.", state="error")
+
+        st.markdown("""
+        <div style="text-align:center; padding:2rem 0 1rem; color:rgba(255,255,255,0.3); font-size:0.75rem;">
+            Powered by <a href="https://nodata.tv" style="color:rgba(255,255,255,0.5);">Nodata.tv</a> •
+            Built with Streamlit
+        </div>
+        """, unsafe_allow_html=True)
+
+# ══════════════════════════════════════════════════════
+# RADIO TAB
+# ══════════════════════════════════════════════════════
+with tab_radio:
+    releases = st.session_state.all_releases
+
+    if not releases:
+        st.info("Noch keine Releases geladen.")
+    else:
+        ensure_radio_playlist()
+        current = get_current_radio_release()
+
+        if current:
+            r_artist = current.get('artist', 'Unknown')
+            r_album = current.get('album', '')
+            r_image = current.get('image') or 'https://placehold.co/400x400/1a1a1f/444?text=No+Cover'
+            r_genres = current.get('genres', [])[:5]
+            r_is_seen = current['id'] in st.session_state.seen_releases
+
+            # ── Top controls row ──────────────────────────────────
+            col_heading, col_shuffle, col_seen = st.columns([3, 1.2, 1.2])
+
+            with col_heading:
+                total_r = len(st.session_state.radio_playlist)
+                pos_r = st.session_state.radio_index + 1
+                st.markdown(
+                    f'<p style="margin:0; font-size:0.75rem; color:rgba(255,255,255,0.35); '
+                    f'text-transform:uppercase; letter-spacing:0.08em;">📻 Nodata Radio — '
+                    f'Track {pos_r} / {total_r}</p>',
+                    unsafe_allow_html=True
+                )
+
+            with col_shuffle:
+                shuffle_label = "🔀 Shuffle" if st.session_state.radio_shuffle else "▶️ Sequential"
+                if st.button(shuffle_label, use_container_width=True, key="radio_shuffle_btn"):
+                    st.session_state.radio_shuffle = not st.session_state.radio_shuffle
+                    init_radio_playlist()
+                    st.rerun()
+
+            with col_seen:
+                seen_label = "✓ Gesehen" if r_is_seen else "○ Merken"
+                seen_type = "secondary" if r_is_seen else "primary"
+                if st.button(seen_label, use_container_width=True, key="radio_seen_btn", type=seen_type):
+                    if r_is_seen:
+                        unmark_as_seen(current['id'])
                     else:
-                        status.update(label="😔 Keine neuen Releases im Archiv gefunden.", state="error")
-    
-    # Footer Info
-    st.markdown("""
-    <div style="text-align:center; padding:2rem 0 1rem; color:rgba(255,255,255,0.3); font-size:0.75rem;">
-        Powered by <a href="https://nodata.tv" style="color:rgba(255,255,255,0.5);">Nodata.tv</a> • 
-        Built with Streamlit
-    </div>
-    """, unsafe_allow_html=True)
+                        mark_as_seen(current['id'])
+                    st.rerun()
+
+            st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+
+            # ── Player: cover + info + embedded SC widget ─────────
+            col_cover, col_info = st.columns([1, 2])
+
+            with col_cover:
+                st.image(r_image, use_container_width=True)
+
+                # External links below cover
+                lnk = current.get('links', {})
+                sc_q = urllib.parse.quote_plus(f"{r_artist} {r_album}")
+                sc_mobile = f"https://m.soundcloud.com/search?q={sc_q}"
+                yt_url = lnk.get('youtube', '#')
+                bc_url = lnk.get('bandcamp', '#')
+                am_url = lnk.get('apple', '#')
+                nd_url = current.get('detail_url', '')
+
+                btn_cols = st.columns(4 if nd_url else 3)
+                btn_cols[0].link_button("☁️ SC", sc_mobile, use_container_width=True, help="SoundCloud")
+                btn_cols[1].link_button("▶️ YT", yt_url, use_container_width=True, help="YouTube")
+                btn_cols[2].link_button("🎸 BC", bc_url, use_container_width=True, help="Bandcamp")
+                if nd_url:
+                    btn_cols[3].link_button("🌐", nd_url, use_container_width=True, help="Nodata.tv")
+
+            with col_info:
+                # Artist / Album / Genres
+                genre_pills_html = ""
+                if r_genres:
+                    genre_pills_html = "".join([
+                        f'<span class="radio-genre-pill">{g}</span>'
+                        for g in r_genres
+                    ])
+                    genre_pills_html = f'<div class="radio-genres">{genre_pills_html}</div>'
+
+                st.markdown(
+                    f'<p class="radio-artist">{r_artist}</p>'
+                    f'<p class="radio-album">{r_album or "&nbsp;"}</p>'
+                    f'{genre_pills_html}',
+                    unsafe_allow_html=True
+                )
+
+                # SoundCloud embedded widget (visual player, search query)
+                sc_embed_query = urllib.parse.quote(f"{r_artist} {r_album}", safe='')
+                sc_embed_src = (
+                    "https://w.soundcloud.com/player/"
+                    f"?url=https%3A//soundcloud.com/search/sounds%3Fq%3D{sc_embed_query}"
+                    "&color=%23ff4444"
+                    "&auto_play=false"
+                    "&visual=true"
+                    "&buying=false"
+                    "&liking=false"
+                    "&download=false"
+                    "&sharing=false"
+                    "&show_artwork=true"
+                    "&show_comments=false"
+                    "&show_user=false"
+                    "&show_reposts=false"
+                    "&show_teaser=false"
+                )
+                components.html(
+                    f'<iframe width="100%" height="280" scrolling="no" frameborder="no" '
+                    f'allow="autoplay" style="border-radius:10px;" src="{sc_embed_src}"></iframe>',
+                    height=290
+                )
+
+            # ── Navigation controls ───────────────────────────────
+            st.markdown("<div style='height:4px'></div>", unsafe_allow_html=True)
+            nav_prev, nav_spacer, nav_next = st.columns([1, 2, 1])
+
+            with nav_prev:
+                if st.button("⏮  Vorheriger", use_container_width=True, key="radio_prev"):
+                    radio_navigate(-1)
+                    st.rerun()
+
+            with nav_spacer:
+                pass  # empty center
+
+            with nav_next:
+                if st.button("Nächster  ⏭", use_container_width=True, key="radio_next", type="primary"):
+                    radio_navigate(1)
+                    st.rerun()
+
+            # ── Upcoming queue ────────────────────────────────────
+            st.markdown("<div style='height:12px'></div>", unsafe_allow_html=True)
+            st.markdown('<p class="queue-label">Nächste Releases</p>', unsafe_allow_html=True)
+
+            playlist = st.session_state.radio_playlist
+            cur_idx = st.session_state.radio_index
+            queue_cols = st.columns(8)
+
+            for qi in range(8):
+                playlist_pos = (cur_idx + qi + 1) % len(playlist)
+                q_release = releases[playlist[playlist_pos]]
+                q_img = q_release.get('image') or 'https://placehold.co/200x200/1a1a1f/444?text=?'
+                q_artist = q_release.get('artist', '?')
+                q_album = q_release.get('album', '')
+
+                with queue_cols[qi]:
+                    # Clickable queue card
+                    img_html = (
+                        f'<div class="queue-card">'
+                        f'<img src="{q_img}" alt="{q_artist}" '
+                        f'onerror="this.src=\'https://placehold.co/200x200/1a1a1f/444?text=?\'">'
+                        f'<div class="queue-card-info">'
+                        f'<div class="queue-artist">{q_artist}</div>'
+                        f'<div class="queue-album">{q_album}</div>'
+                        f'</div></div>'
+                    )
+                    st.markdown(img_html, unsafe_allow_html=True)
+                    if st.button("▶", key=f"q_play_{qi}_{playlist_pos}", use_container_width=True):
+                        st.session_state.radio_index = playlist_pos
+                        st.rerun()
