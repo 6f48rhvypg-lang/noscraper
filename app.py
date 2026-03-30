@@ -932,27 +932,17 @@ with tab_radio:
                     unsafe_allow_html=True
                 )
 
-                # SoundCloud embedded widget (visual player, search query)
-                sc_embed_query = urllib.parse.quote(f"{r_artist} {r_album}", safe='')
-                sc_embed_src = (
-                    "https://w.soundcloud.com/player/"
-                    f"?url=https%3A//soundcloud.com/search/sounds%3Fq%3D{sc_embed_query}"
-                    "&color=%23ff4444"
-                    "&auto_play=false"
-                    "&visual=true"
-                    "&buying=false"
-                    "&liking=false"
-                    "&download=false"
-                    "&sharing=false"
-                    "&show_artwork=true"
-                    "&show_comments=false"
-                    "&show_user=false"
-                    "&show_reposts=false"
-                    "&show_teaser=false"
-                )
+                # YouTube search embed
+                yt_query = urllib.parse.quote_plus(f"{r_artist} {r_album}")
+                yt_embed_src = f"https://www.youtube.com/embed?listType=search&list={yt_query}"
                 components.html(
-                    f'<iframe width="100%" height="280" scrolling="no" frameborder="no" '
-                    f'allow="autoplay" style="border-radius:10px;" src="{sc_embed_src}"></iframe>',
+                    f'''<iframe width="100%" height="280"
+                        src="{yt_embed_src}"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="border-radius:10px; display:block;">
+                    </iframe>''',
                     height=290
                 )
 
