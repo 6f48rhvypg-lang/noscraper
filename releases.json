@@ -1,5 +1,142 @@
 [
     {
+        "id": "E.R.P. / We’re Going Deep [2026]",
+        "artist": "E.R.P.",
+        "album": "We’re Going Deep",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36753244.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Acid",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197223",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=E.R.P.+We%E2%80%99re+Going+Deep",
+            "bandcamp": "https://bandcamp.com/search?q=E.R.P.+We%E2%80%99re+Going+Deep",
+            "soundcloud": "https://soundcloud.com/search?q=E.R.P.+We%E2%80%99re+Going+Deep",
+            "apple": "https://music.apple.com/de/search?term=E.R.P.+We%E2%80%99re+Going+Deep"
+        }
+    },
+    {
+        "id": "Boards of Canada / Old Tunes Vol. 2 [1996]",
+        "artist": "Boards of Canada",
+        "album": "Old Tunes Vol. 2",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-131696942.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Downtempo",
+            "Electronic",
+            "IDM"
+        ],
+        "detail_url": "https://nodata.tv/197213",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Boards+of+Canada+Old+Tunes+Vol.+2",
+            "bandcamp": "https://bandcamp.com/search?q=Boards+of+Canada+Old+Tunes+Vol.+2",
+            "soundcloud": "https://soundcloud.com/search?q=Boards+of+Canada+Old+Tunes+Vol.+2",
+            "apple": "https://music.apple.com/de/search?term=Boards+of+Canada+Old+Tunes+Vol.+2"
+        }
+    },
+    {
+        "id": "Four Tet / Human Voice [2026]",
+        "artist": "Four Tet",
+        "album": "Human Voice",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36580423.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Electronic",
+            "House"
+        ],
+        "detail_url": "https://nodata.tv/197221",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Four+Tet+Human+Voice",
+            "bandcamp": "https://bandcamp.com/search?q=Four+Tet+Human+Voice",
+            "soundcloud": "https://soundcloud.com/search?q=Four+Tet+Human+Voice",
+            "apple": "https://music.apple.com/de/search?term=Four+Tet+Human+Voice"
+        }
+    },
+    {
+        "id": "Trois-Quarts Taxi System / Scarecrow [2026]",
+        "artist": "Trois-Quarts Taxi System",
+        "album": "Scarecrow",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-28785058.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Ambient",
+            "Breaks",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197219",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Trois-Quarts+Taxi+System+Scarecrow",
+            "bandcamp": "https://bandcamp.com/search?q=Trois-Quarts+Taxi+System+Scarecrow",
+            "soundcloud": "https://soundcloud.com/search?q=Trois-Quarts+Taxi+System+Scarecrow",
+            "apple": "https://music.apple.com/de/search?term=Trois-Quarts+Taxi+System+Scarecrow"
+        }
+    },
+    {
+        "id": "Kode9 & The Spaceape / Kingstown [2014]",
+        "artist": "Kode9 & The Spaceape",
+        "album": "Kingstown",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-3202966.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Dubstep",
+            "Electronic",
+            "Spoken Word"
+        ],
+        "detail_url": "https://nodata.tv/197225",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Kode9+%26+The+Spaceape+Kingstown",
+            "bandcamp": "https://bandcamp.com/search?q=Kode9+%26+The+Spaceape+Kingstown",
+            "soundcloud": "https://soundcloud.com/search?q=Kode9+%26+The+Spaceape+Kingstown",
+            "apple": "https://music.apple.com/de/search?term=Kode9+%26+The+Spaceape+Kingstown"
+        }
+    },
+    {
+        "id": "Shigeto / Mono no aware (物の哀れ) Vol. 1 [2026]",
+        "artist": "Shigeto",
+        "album": "Mono no aware (物の哀れ) Vol. 1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-26683178.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "House",
+            "Jazz",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197217",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+1",
+            "bandcamp": "https://bandcamp.com/search?q=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+1",
+            "soundcloud": "https://soundcloud.com/search?q=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+1",
+            "apple": "https://music.apple.com/de/search?term=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+1"
+        }
+    },
+    {
+        "id": "Unknown Artist / Home Of Dance Music [2026]",
+        "artist": "Unknown Artist",
+        "album": "Home Of Dance Music",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-35398402.jpg",
+        "date_found": "2026-04-03",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197199",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Unknown+Artist+Home+Of+Dance+Music",
+            "bandcamp": "https://bandcamp.com/search?q=Unknown+Artist+Home+Of+Dance+Music",
+            "soundcloud": "https://soundcloud.com/search?q=Unknown+Artist+Home+Of+Dance+Music",
+            "apple": "https://music.apple.com/de/search?term=Unknown+Artist+Home+Of+Dance+Music"
+        }
+    },
+    {
         "id": "Polygonia / Ceaseless Motion [2026]",
         "artist": "Polygonia",
         "album": "Ceaseless Motion",
