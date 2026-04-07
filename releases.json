@@ -1,5 +1,145 @@
 [
     {
+        "id": "Eamon Harkin / The Place Where We Live [2026]",
+        "artist": "Eamon Harkin",
+        "album": "The Place Where We Live",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36736873.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Acid",
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197247",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Eamon+Harkin+The+Place+Where+We+Live",
+            "bandcamp": "https://bandcamp.com/search?q=Eamon+Harkin+The+Place+Where+We+Live",
+            "soundcloud": "https://soundcloud.com/search?q=Eamon+Harkin+The+Place+Where+We+Live",
+            "apple": "https://music.apple.com/de/search?term=Eamon+Harkin+The+Place+Where+We+Live"
+        }
+    },
+    {
+        "id": "Fireground / Refreshing Part 2 [2026]",
+        "artist": "Fireground",
+        "album": "Refreshing Part 2",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36590464.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197227",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Fireground+Refreshing+Part+2",
+            "bandcamp": "https://bandcamp.com/search?q=Fireground+Refreshing+Part+2",
+            "soundcloud": "https://soundcloud.com/search?q=Fireground+Refreshing+Part+2",
+            "apple": "https://music.apple.com/de/search?term=Fireground+Refreshing+Part+2"
+        }
+    },
+    {
+        "id": "SHXCXCHCXSH / EEEER [2026]",
+        "artist": "SHXCXCHCXSH",
+        "album": "EEEER",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36708637.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Abstract",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197245",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=SHXCXCHCXSH+EEEER",
+            "bandcamp": "https://bandcamp.com/search?q=SHXCXCHCXSH+EEEER",
+            "soundcloud": "https://soundcloud.com/search?q=SHXCXCHCXSH+EEEER",
+            "apple": "https://music.apple.com/de/search?term=SHXCXCHCXSH+EEEER"
+        }
+    },
+    {
+        "id": "ex_libris / 003 [2026]",
+        "artist": "ex_libris",
+        "album": "003",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36893248.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "House",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197211",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=ex_libris+003",
+            "bandcamp": "https://bandcamp.com/search?q=ex_libris+003",
+            "soundcloud": "https://soundcloud.com/search?q=ex_libris+003",
+            "apple": "https://music.apple.com/de/search?term=ex_libris+003"
+        }
+    },
+    {
+        "id": "Department / Department [2025]",
+        "artist": "Department",
+        "album": "Department",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-35944603.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197215",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Department+Department",
+            "bandcamp": "https://bandcamp.com/search?q=Department+Department",
+            "soundcloud": "https://soundcloud.com/search?q=Department+Department",
+            "apple": "https://music.apple.com/de/search?term=Department+Department"
+        }
+    },
+    {
+        "id": "Bleaching Agent & Miles J Paralysis / Double Vision [2026]",
+        "artist": "Bleaching Agent & Miles J Paralysis",
+        "album": "Double Vision",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-33434528.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Downtempo",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197243",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Bleaching+Agent+%26+Miles+J+Paralysis+Double+Vision",
+            "bandcamp": "https://bandcamp.com/search?q=Bleaching+Agent+%26+Miles+J+Paralysis+Double+Vision",
+            "soundcloud": "https://soundcloud.com/search?q=Bleaching+Agent+%26+Miles+J+Paralysis+Double+Vision",
+            "apple": "https://music.apple.com/de/search?term=Bleaching+Agent+%26+Miles+J+Paralysis+Double+Vision"
+        }
+    },
+    {
+        "id": "Tobias. & Doltz. / Frontiers Of Science [2026]",
+        "artist": "Tobias. & Doltz.",
+        "album": "Frontiers Of Science",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36901155.jpg",
+        "date_found": "2026-04-07",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197249",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Tobias.+%26+Doltz.+Frontiers+Of+Science",
+            "bandcamp": "https://bandcamp.com/search?q=Tobias.+%26+Doltz.+Frontiers+Of+Science",
+            "soundcloud": "https://soundcloud.com/search?q=Tobias.+%26+Doltz.+Frontiers+Of+Science",
+            "apple": "https://music.apple.com/de/search?term=Tobias.+%26+Doltz.+Frontiers+Of+Science"
+        }
+    },
+    {
         "id": "E.R.P. / We’re Going Deep [2026]",
         "artist": "E.R.P.",
         "album": "We’re Going Deep",
