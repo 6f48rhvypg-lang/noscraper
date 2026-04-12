@@ -1,5 +1,149 @@
 [
     {
+        "id": "SnPLO / Untitled [2026]",
+        "artist": "SnPLO",
+        "album": "Untitled",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36995748.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197275",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=SnPLO+Untitled",
+            "bandcamp": "https://bandcamp.com/search?q=SnPLO+Untitled",
+            "soundcloud": "https://soundcloud.com/search?q=SnPLO+Untitled",
+            "apple": "https://music.apple.com/de/search?term=SnPLO+Untitled"
+        }
+    },
+    {
+        "id": "Mammo / Lateral [2026]",
+        "artist": "Mammo",
+        "album": "Lateral",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36712498.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197271",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Mammo+Lateral",
+            "bandcamp": "https://bandcamp.com/search?q=Mammo+Lateral",
+            "soundcloud": "https://soundcloud.com/search?q=Mammo+Lateral",
+            "apple": "https://music.apple.com/de/search?term=Mammo+Lateral"
+        }
+    },
+    {
+        "id": "Lb Honne / Guardwatcher (Pt. I) [2026]",
+        "artist": "Lb Honne",
+        "album": "Guardwatcher (Pt. I)",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36891463.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197267",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Lb+Honne+Guardwatcher+%28Pt.+I%29",
+            "bandcamp": "https://bandcamp.com/search?q=Lb+Honne+Guardwatcher+%28Pt.+I%29",
+            "soundcloud": "https://soundcloud.com/search?q=Lb+Honne+Guardwatcher+%28Pt.+I%29",
+            "apple": "https://music.apple.com/de/search?term=Lb+Honne+Guardwatcher+%28Pt.+I%29"
+        }
+    },
+    {
+        "id": "Nondi_ / Nondi… [2026]",
+        "artist": "Nondi_",
+        "album": "Nondi…",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-28972987.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Footwork",
+            "IDM",
+            "Juke"
+        ],
+        "detail_url": "https://nodata.tv/197279",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Nondi_+Nondi%E2%80%A6",
+            "bandcamp": "https://bandcamp.com/search?q=Nondi_+Nondi%E2%80%A6",
+            "soundcloud": "https://soundcloud.com/search?q=Nondi_+Nondi%E2%80%A6",
+            "apple": "https://music.apple.com/de/search?term=Nondi_+Nondi%E2%80%A6"
+        }
+    },
+    {
+        "id": "Subjects – Freeze / Darkside [2026]",
+        "artist": "Subjects – Freeze",
+        "album": "Darkside",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36944642.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/197252",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Subjects+%E2%80%93+Freeze+Darkside",
+            "bandcamp": "https://bandcamp.com/search?q=Subjects+%E2%80%93+Freeze+Darkside",
+            "soundcloud": "https://soundcloud.com/search?q=Subjects+%E2%80%93+Freeze+Darkside",
+            "apple": "https://music.apple.com/de/search?term=Subjects+%E2%80%93+Freeze+Darkside"
+        }
+    },
+    {
+        "id": "Lone / Hyperphantasia [2026]",
+        "artist": "Lone",
+        "album": "Hyperphantasia",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-35391097.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "Downtempo",
+            "Electronic",
+            "House",
+            "IDM"
+        ],
+        "detail_url": "https://nodata.tv/197277",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Lone+Hyperphantasia",
+            "bandcamp": "https://bandcamp.com/search?q=Lone+Hyperphantasia",
+            "soundcloud": "https://soundcloud.com/search?q=Lone+Hyperphantasia",
+            "apple": "https://music.apple.com/de/search?term=Lone+Hyperphantasia"
+        }
+    },
+    {
+        "id": "Actress & Suzanne Ciani / Concrète Waves [2026]",
+        "artist": "Actress & Suzanne Ciani",
+        "album": "Concrète Waves",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-11097642.jpg",
+        "date_found": "2026-04-12",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Field Recording",
+            "Live",
+            "Musique Concrète",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197273",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Actress+%26+Suzanne+Ciani+Concr%C3%A8te+Waves",
+            "bandcamp": "https://bandcamp.com/search?q=Actress+%26+Suzanne+Ciani+Concr%C3%A8te+Waves",
+            "soundcloud": "https://soundcloud.com/search?q=Actress+%26+Suzanne+Ciani+Concr%C3%A8te+Waves",
+            "apple": "https://music.apple.com/de/search?term=Actress+%26+Suzanne+Ciani+Concr%C3%A8te+Waves"
+        }
+    },
+    {
         "id": "Eamon Harkin / The Place Where We Live [2026]",
         "artist": "Eamon Harkin",
         "album": "The Place Where We Live",
