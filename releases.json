@@ -1,5 +1,145 @@
 [
     {
+        "id": "Unknown Artist / THANG LONG 01 [2025]",
+        "artist": "Unknown Artist",
+        "album": "THANG LONG 01",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-31847759.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197354",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Unknown+Artist+THANG+LONG+01",
+            "bandcamp": "https://bandcamp.com/search?q=Unknown+Artist+THANG+LONG+01",
+            "soundcloud": "https://soundcloud.com/search?q=Unknown+Artist+THANG+LONG+01",
+            "apple": "https://music.apple.com/de/search?term=Unknown+Artist+THANG+LONG+01"
+        }
+    },
+    {
+        "id": "A.Fruit / Choice [2026]",
+        "artist": "A.Fruit",
+        "album": "Choice",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-11305538.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Breakbeat",
+            "Electronic",
+            "Experimental",
+            "Footwork",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197330",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=A.Fruit+Choice",
+            "bandcamp": "https://bandcamp.com/search?q=A.Fruit+Choice",
+            "soundcloud": "https://soundcloud.com/search?q=A.Fruit+Choice",
+            "apple": "https://music.apple.com/de/search?term=A.Fruit+Choice"
+        }
+    },
+    {
+        "id": "Rene Wise / Johnson’s Theme [2026]",
+        "artist": "Rene Wise",
+        "album": "Johnson’s Theme",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-37092441.jpeg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197362",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Rene+Wise+Johnson%E2%80%99s+Theme",
+            "bandcamp": "https://bandcamp.com/search?q=Rene+Wise+Johnson%E2%80%99s+Theme",
+            "soundcloud": "https://soundcloud.com/search?q=Rene+Wise+Johnson%E2%80%99s+Theme",
+            "apple": "https://music.apple.com/de/search?term=Rene+Wise+Johnson%E2%80%99s+Theme"
+        }
+    },
+    {
+        "id": "Roméo Poirier / Off Off The Record [2026]",
+        "artist": "Roméo Poirier",
+        "album": "Off Off The Record",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-37071861.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/197326",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Rom%C3%A9o+Poirier+Off+Off+The+Record",
+            "bandcamp": "https://bandcamp.com/search?q=Rom%C3%A9o+Poirier+Off+Off+The+Record",
+            "soundcloud": "https://soundcloud.com/search?q=Rom%C3%A9o+Poirier+Off+Off+The+Record",
+            "apple": "https://music.apple.com/de/search?term=Rom%C3%A9o+Poirier+Off+Off+The+Record"
+        }
+    },
+    {
+        "id": "DJ Plant Texture & Dona / Mistress 18 [2026]",
+        "artist": "DJ Plant Texture & Dona",
+        "album": "Mistress 18",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-37091484.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Electronic",
+            "Hip Hop",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197360",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=DJ+Plant+Texture+%26+Dona+Mistress+18",
+            "bandcamp": "https://bandcamp.com/search?q=DJ+Plant+Texture+%26+Dona+Mistress+18",
+            "soundcloud": "https://soundcloud.com/search?q=DJ+Plant+Texture+%26+Dona+Mistress+18",
+            "apple": "https://music.apple.com/de/search?term=DJ+Plant+Texture+%26+Dona+Mistress+18"
+        }
+    },
+    {
+        "id": "Shigeto / Mono no aware (物の哀れ) Vol. 2 [2026]",
+        "artist": "Shigeto",
+        "album": "Mono no aware (物の哀れ) Vol. 2",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-10959582.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Dance",
+            "Electronic",
+            "House",
+            "Jazz",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197350",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+2",
+            "bandcamp": "https://bandcamp.com/search?q=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+2",
+            "soundcloud": "https://soundcloud.com/search?q=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+2",
+            "apple": "https://music.apple.com/de/search?term=Shigeto+Mono+no+aware+%28%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C%29+Vol.+2"
+        }
+    },
+    {
+        "id": "C3D-E / The Perfect Memory [2026]",
+        "artist": "C3D-E",
+        "album": "The Perfect Memory",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36687589.jpg",
+        "date_found": "2026-04-22",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197356",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=C3D-E+The+Perfect+Memory",
+            "bandcamp": "https://bandcamp.com/search?q=C3D-E+The+Perfect+Memory",
+            "soundcloud": "https://soundcloud.com/search?q=C3D-E+The+Perfect+Memory",
+            "apple": "https://music.apple.com/de/search?term=C3D-E+The+Perfect+Memory"
+        }
+    },
+    {
         "id": "Hoavi / Architectonics [2026]",
         "artist": "Hoavi",
         "album": "Architectonics",
