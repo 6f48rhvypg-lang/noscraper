@@ -1,5 +1,148 @@
 [
     {
+        "id": "Oisel / Montenero [2026]",
+        "artist": "Oisel",
+        "album": "Montenero",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-37081698.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "Experimental",
+            "Jazz",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197382",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Oisel+Montenero",
+            "bandcamp": "https://bandcamp.com/search?q=Oisel+Montenero",
+            "soundcloud": "https://soundcloud.com/search?q=Oisel+Montenero",
+            "apple": "https://music.apple.com/de/search?term=Oisel+Montenero"
+        }
+    },
+    {
+        "id": "Stones Taro / Crevasse [2026]",
+        "artist": "Stones Taro",
+        "album": "Crevasse",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-13673939.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Bass",
+            "Breaks",
+            "Dub",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197394",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Stones+Taro+Crevasse",
+            "bandcamp": "https://bandcamp.com/search?q=Stones+Taro+Crevasse",
+            "soundcloud": "https://soundcloud.com/search?q=Stones+Taro+Crevasse",
+            "apple": "https://music.apple.com/de/search?term=Stones+Taro+Crevasse"
+        }
+    },
+    {
+        "id": "Serge Geyzel / The Way To Go [2026]",
+        "artist": "Serge Geyzel",
+        "album": "The Way To Go",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-37098930.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Electronic",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197352",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Serge+Geyzel+The+Way+To+Go",
+            "bandcamp": "https://bandcamp.com/search?q=Serge+Geyzel+The+Way+To+Go",
+            "soundcloud": "https://soundcloud.com/search?q=Serge+Geyzel+The+Way+To+Go",
+            "apple": "https://music.apple.com/de/search?term=Serge+Geyzel+The+Way+To+Go"
+        }
+    },
+    {
+        "id": "PPP / Bborn Again [2026]",
+        "artist": "PPP",
+        "album": "Bborn Again",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-11951560.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Downtempo",
+            "Electronic",
+            "Experimental",
+            "House",
+            "Leftfield",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197380",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=PPP+Bborn+Again",
+            "bandcamp": "https://bandcamp.com/search?q=PPP+Bborn+Again",
+            "soundcloud": "https://soundcloud.com/search?q=PPP+Bborn+Again",
+            "apple": "https://music.apple.com/de/search?term=PPP+Bborn+Again"
+        }
+    },
+    {
+        "id": "Emra Grid / Eleven Finns [2026]",
+        "artist": "Emra Grid",
+        "album": "Eleven Finns",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-12954157.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Abstract",
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "Minimal"
+        ],
+        "detail_url": "https://nodata.tv/197366",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Emra+Grid+Eleven+Finns",
+            "bandcamp": "https://bandcamp.com/search?q=Emra+Grid+Eleven+Finns",
+            "soundcloud": "https://soundcloud.com/search?q=Emra+Grid+Eleven+Finns",
+            "apple": "https://music.apple.com/de/search?term=Emra+Grid+Eleven+Finns"
+        }
+    },
+    {
+        "id": "Voyager – Long Distance / Sky High [2026]",
+        "artist": "Voyager – Long Distance",
+        "album": "Sky High",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-36762484.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/197390",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Voyager+%E2%80%93+Long+Distance+Sky+High",
+            "bandcamp": "https://bandcamp.com/search?q=Voyager+%E2%80%93+Long+Distance+Sky+High",
+            "soundcloud": "https://soundcloud.com/search?q=Voyager+%E2%80%93+Long+Distance+Sky+High",
+            "apple": "https://music.apple.com/de/search?term=Voyager+%E2%80%93+Long+Distance+Sky+High"
+        }
+    },
+    {
+        "id": "Boards of Canada / A Few Old Tunes [1996]",
+        "artist": "Boards of Canada",
+        "album": "A Few Old Tunes",
+        "image": "https://nodata.tv/wp-content/uploads/2026/04/R-69047642.jpg",
+        "date_found": "2026-04-24",
+        "genres": [
+            "Downtempo",
+            "Electronic",
+            "IDM",
+            "Leftfield"
+        ],
+        "detail_url": "https://nodata.tv/197334",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Boards+of+Canada+A+Few+Old+Tunes",
+            "bandcamp": "https://bandcamp.com/search?q=Boards+of+Canada+A+Few+Old+Tunes",
+            "soundcloud": "https://soundcloud.com/search?q=Boards+of+Canada+A+Few+Old+Tunes",
+            "apple": "https://music.apple.com/de/search?term=Boards+of+Canada+A+Few+Old+Tunes"
+        }
+    },
+    {
         "id": "Unknown Artist / THANG LONG 01 [2025]",
         "artist": "Unknown Artist",
         "album": "THANG LONG 01",
