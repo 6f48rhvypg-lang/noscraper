@@ -1,5 +1,145 @@
 [
     {
+        "id": "Sensenet Corp. / Fear [1994]",
+        "artist": "Sensenet Corp.",
+        "album": "Fear",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-20315422.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Acid",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197419",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sensenet+Corp.+Fear",
+            "bandcamp": "https://bandcamp.com/search?q=Sensenet+Corp.+Fear",
+            "soundcloud": "https://soundcloud.com/search?q=Sensenet+Corp.+Fear",
+            "apple": "https://music.apple.com/de/search?term=Sensenet+Corp.+Fear"
+        }
+    },
+    {
+        "id": "PVAS / Slipstream [2025]",
+        "artist": "PVAS",
+        "album": "Slipstream",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-35598985.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "IDM",
+            "Leftfield"
+        ],
+        "detail_url": "https://nodata.tv/197396",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=PVAS+Slipstream",
+            "bandcamp": "https://bandcamp.com/search?q=PVAS+Slipstream",
+            "soundcloud": "https://soundcloud.com/search?q=PVAS+Slipstream",
+            "apple": "https://music.apple.com/de/search?term=PVAS+Slipstream"
+        }
+    },
+    {
+        "id": "Fireground / Refreshing Part 1 [2023]",
+        "artist": "Fireground",
+        "album": "Refreshing Part 1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-26596394.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197421",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Fireground+Refreshing+Part+1",
+            "bandcamp": "https://bandcamp.com/search?q=Fireground+Refreshing+Part+1",
+            "soundcloud": "https://soundcloud.com/search?q=Fireground+Refreshing+Part+1",
+            "apple": "https://music.apple.com/de/search?term=Fireground+Refreshing+Part+1"
+        }
+    },
+    {
+        "id": "Untold / HEK036 [2026]",
+        "artist": "Untold",
+        "album": "HEK036",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-35089079.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Ambient",
+            "Dance",
+            "Dubstep",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197386",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Untold+HEK036",
+            "bandcamp": "https://bandcamp.com/search?q=Untold+HEK036",
+            "soundcloud": "https://soundcloud.com/search?q=Untold+HEK036",
+            "apple": "https://music.apple.com/de/search?term=Untold+HEK036"
+        }
+    },
+    {
+        "id": "WAX / No. 11110 [2026]",
+        "artist": "WAX",
+        "album": "No. 11110",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37188180.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Dub",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197415",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=WAX+No.+11110",
+            "bandcamp": "https://bandcamp.com/search?q=WAX+No.+11110",
+            "soundcloud": "https://soundcloud.com/search?q=WAX+No.+11110",
+            "apple": "https://music.apple.com/de/search?term=WAX+No.+11110"
+        }
+    },
+    {
+        "id": "Emily Jeanne / Versions Vol. 1 [2026]",
+        "artist": "Emily Jeanne",
+        "album": "Versions Vol. 1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-33740733.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Bass",
+            "Electronic",
+            "Leftfield",
+            "Remixes",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197384",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Emily+Jeanne+Versions+Vol.+1",
+            "bandcamp": "https://bandcamp.com/search?q=Emily+Jeanne+Versions+Vol.+1",
+            "soundcloud": "https://soundcloud.com/search?q=Emily+Jeanne+Versions+Vol.+1",
+            "apple": "https://music.apple.com/de/search?term=Emily+Jeanne+Versions+Vol.+1"
+        }
+    },
+    {
+        "id": "Sentomea / Wonderment [2026]",
+        "artist": "Sentomea",
+        "album": "Wonderment",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-10165993.jpg",
+        "date_found": "2026-05-02",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197417",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sentomea+Wonderment",
+            "bandcamp": "https://bandcamp.com/search?q=Sentomea+Wonderment",
+            "soundcloud": "https://soundcloud.com/search?q=Sentomea+Wonderment",
+            "apple": "https://music.apple.com/de/search?term=Sentomea+Wonderment"
+        }
+    },
+    {
         "id": "Oisel / Montenero [2026]",
         "artist": "Oisel",
         "album": "Montenero",
