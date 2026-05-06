@@ -1,5 +1,143 @@
 [
     {
+        "id": "kwes. / Kinds [2026]",
+        "artist": "kwes.",
+        "album": "Kinds",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-36669901.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/197441",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=kwes.+Kinds",
+            "bandcamp": "https://bandcamp.com/search?q=kwes.+Kinds",
+            "soundcloud": "https://soundcloud.com/search?q=kwes.+Kinds",
+            "apple": "https://music.apple.com/de/search?term=kwes.+Kinds"
+        }
+    },
+    {
+        "id": "Soulmate / Sequence [2026]",
+        "artist": "Soulmate",
+        "album": "Sequence",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-46650676.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197423",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Soulmate+Sequence",
+            "bandcamp": "https://bandcamp.com/search?q=Soulmate+Sequence",
+            "soundcloud": "https://soundcloud.com/search?q=Soulmate+Sequence",
+            "apple": "https://music.apple.com/de/search?term=Soulmate+Sequence"
+        }
+    },
+    {
+        "id": "Solar X / Divergent Sequences [2025]",
+        "artist": "Solar X",
+        "album": "Divergent Sequences",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-35086091.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197445",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Solar+X+Divergent+Sequences",
+            "bandcamp": "https://bandcamp.com/search?q=Solar+X+Divergent+Sequences",
+            "soundcloud": "https://soundcloud.com/search?q=Solar+X+Divergent+Sequences",
+            "apple": "https://music.apple.com/de/search?term=Solar+X+Divergent+Sequences"
+        }
+    },
+    {
+        "id": "EDC / EDC1 [2026]",
+        "artist": "EDC",
+        "album": "EDC1",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-30850642.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "House",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197439",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=EDC+EDC1",
+            "bandcamp": "https://bandcamp.com/search?q=EDC+EDC1",
+            "soundcloud": "https://soundcloud.com/search?q=EDC+EDC1",
+            "apple": "https://music.apple.com/de/search?term=EDC+EDC1"
+        }
+    },
+    {
+        "id": "Various Artists / Pioneers – Side B [2026]",
+        "artist": "Various Artists",
+        "album": "Pioneers – Side B",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-3288042.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Ambient",
+            "Drone",
+            "Electronic",
+            "Experimental",
+            "IDM",
+            "Leftfield"
+        ],
+        "detail_url": "https://nodata.tv/197443",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Various+Artists+Pioneers+%E2%80%93+Side+B",
+            "bandcamp": "https://bandcamp.com/search?q=Various+Artists+Pioneers+%E2%80%93+Side+B",
+            "soundcloud": "https://soundcloud.com/search?q=Various+Artists+Pioneers+%E2%80%93+Side+B",
+            "apple": "https://music.apple.com/de/search?term=Various+Artists+Pioneers+%E2%80%93+Side+B"
+        }
+    },
+    {
+        "id": "Ø / Sysivalo [2025]",
+        "artist": "Ø",
+        "album": "Sysivalo",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-35071925.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental"
+        ],
+        "detail_url": "https://nodata.tv/197392",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=%C3%98+Sysivalo",
+            "bandcamp": "https://bandcamp.com/search?q=%C3%98+Sysivalo",
+            "soundcloud": "https://soundcloud.com/search?q=%C3%98+Sysivalo",
+            "apple": "https://music.apple.com/de/search?term=%C3%98+Sysivalo"
+        }
+    },
+    {
+        "id": "PATRICIA / Y Try [2026]",
+        "artist": "PATRICIA",
+        "album": "Y Try",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37242788.jpg",
+        "date_found": "2026-05-06",
+        "genres": [
+            "Acid",
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197413",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=PATRICIA+Y+Try",
+            "bandcamp": "https://bandcamp.com/search?q=PATRICIA+Y+Try",
+            "soundcloud": "https://soundcloud.com/search?q=PATRICIA+Y+Try",
+            "apple": "https://music.apple.com/de/search?term=PATRICIA+Y+Try"
+        }
+    },
+    {
         "id": "Sensenet Corp. / Fear [1994]",
         "artist": "Sensenet Corp.",
         "album": "Fear",
