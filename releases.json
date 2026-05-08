@@ -1,5 +1,122 @@
 [
     {
+        "id": "Leroi Conroy / A Tiger’s Tale [2025]",
+        "artist": "Leroi Conroy",
+        "album": "A Tiger’s Tale",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-34508329.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Funk",
+            "Hip Hop",
+            "Instrumental",
+            "Jazz",
+            "Soul"
+        ],
+        "detail_url": "https://nodata.tv/197447",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Leroi+Conroy+A+Tiger%E2%80%99s+Tale",
+            "bandcamp": "https://bandcamp.com/search?q=Leroi+Conroy+A+Tiger%E2%80%99s+Tale",
+            "soundcloud": "https://soundcloud.com/search?q=Leroi+Conroy+A+Tiger%E2%80%99s+Tale",
+            "apple": "https://music.apple.com/de/search?term=Leroi+Conroy+A+Tiger%E2%80%99s+Tale"
+        }
+    },
+    {
+        "id": "Antigone / No Country For Old Men [2026]",
+        "artist": "Antigone",
+        "album": "No Country For Old Men",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-18451372.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197471",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Antigone+No+Country+For+Old+Men",
+            "bandcamp": "https://bandcamp.com/search?q=Antigone+No+Country+For+Old+Men",
+            "soundcloud": "https://soundcloud.com/search?q=Antigone+No+Country+For+Old+Men",
+            "apple": "https://music.apple.com/de/search?term=Antigone+No+Country+For+Old+Men"
+        }
+    },
+    {
+        "id": "Dona / Mistress 18.5 [2026]",
+        "artist": "Dona",
+        "album": "Mistress 18.5",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37091598.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197473",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Dona+Mistress+18.5",
+            "bandcamp": "https://bandcamp.com/search?q=Dona+Mistress+18.5",
+            "soundcloud": "https://soundcloud.com/search?q=Dona+Mistress+18.5",
+            "apple": "https://music.apple.com/de/search?term=Dona+Mistress+18.5"
+        }
+    },
+    {
+        "id": "Human Safari / Children Of The Sea [2026]",
+        "artist": "Human Safari",
+        "album": "Children Of The Sea",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37265715.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Electronic",
+            "Techno",
+            "Tribal"
+        ],
+        "detail_url": "https://nodata.tv/197463",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Human+Safari+Children+Of+The+Sea",
+            "bandcamp": "https://bandcamp.com/search?q=Human+Safari+Children+Of+The+Sea",
+            "soundcloud": "https://soundcloud.com/search?q=Human+Safari+Children+Of+The+Sea",
+            "apple": "https://music.apple.com/de/search?term=Human+Safari+Children+Of+The+Sea"
+        }
+    },
+    {
+        "id": "In Transit / In Transit [2025]",
+        "artist": "In Transit",
+        "album": "In Transit",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-35462440.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197465",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=In+Transit+In+Transit",
+            "bandcamp": "https://bandcamp.com/search?q=In+Transit+In+Transit",
+            "soundcloud": "https://soundcloud.com/search?q=In+Transit+In+Transit",
+            "apple": "https://music.apple.com/de/search?term=In+Transit+In+Transit"
+        }
+    },
+    {
+        "id": "Harmony – Give It To Me / Better Know [2026]",
+        "artist": "Harmony – Give It To Me",
+        "album": "Better Know",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37082439.jpg",
+        "date_found": "2026-05-08",
+        "genres": [
+            "Drum n Bass",
+            "Electronic",
+            "Jungle"
+        ],
+        "detail_url": "https://nodata.tv/197388",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Harmony+%E2%80%93+Give+It+To+Me+Better+Know",
+            "bandcamp": "https://bandcamp.com/search?q=Harmony+%E2%80%93+Give+It+To+Me+Better+Know",
+            "soundcloud": "https://soundcloud.com/search?q=Harmony+%E2%80%93+Give+It+To+Me+Better+Know",
+            "apple": "https://music.apple.com/de/search?term=Harmony+%E2%80%93+Give+It+To+Me+Better+Know"
+        }
+    },
+    {
         "id": "kwes. / Kinds [2026]",
         "artist": "kwes.",
         "album": "Kinds",
