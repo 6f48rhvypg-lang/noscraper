@@ -1,5 +1,147 @@
 [
     {
+        "id": "Vakula / Times [2026]",
+        "artist": "Vakula",
+        "album": "Times",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-4082147.jpg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Ambient",
+            "Breaks",
+            "Electronic",
+            "House",
+            "Minimal",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197491",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Vakula+Times",
+            "bandcamp": "https://bandcamp.com/search?q=Vakula+Times",
+            "soundcloud": "https://soundcloud.com/search?q=Vakula+Times",
+            "apple": "https://music.apple.com/de/search?term=Vakula+Times"
+        }
+    },
+    {
+        "id": "Sam Goku / Bliss Drift [2026]",
+        "artist": "Sam Goku",
+        "album": "Bliss Drift",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-10454393.jpeg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197493",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Sam+Goku+Bliss+Drift",
+            "bandcamp": "https://bandcamp.com/search?q=Sam+Goku+Bliss+Drift",
+            "soundcloud": "https://soundcloud.com/search?q=Sam+Goku+Bliss+Drift",
+            "apple": "https://music.apple.com/de/search?term=Sam+Goku+Bliss+Drift"
+        }
+    },
+    {
+        "id": "Jasmín – It’s Girls Night / Long Hair [2026]",
+        "artist": "Jasmín – It’s Girls Night",
+        "album": "Long Hair",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-7088422.jpg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Bass",
+            "Electronic",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197495",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Jasm%C3%ADn+%E2%80%93+It%E2%80%99s+Girls+Night+Long+Hair",
+            "bandcamp": "https://bandcamp.com/search?q=Jasm%C3%ADn+%E2%80%93+It%E2%80%99s+Girls+Night+Long+Hair",
+            "soundcloud": "https://soundcloud.com/search?q=Jasm%C3%ADn+%E2%80%93+It%E2%80%99s+Girls+Night+Long+Hair",
+            "apple": "https://music.apple.com/de/search?term=Jasm%C3%ADn+%E2%80%93+It%E2%80%99s+Girls+Night+Long+Hair"
+        }
+    },
+    {
+        "id": "Yu Su / Foundry [2026]",
+        "artist": "Yu Su",
+        "album": "Foundry",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-37222317.jpeg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Ambient",
+            "Dub",
+            "Electronic",
+            "Experimental",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197503",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Yu+Su+Foundry",
+            "bandcamp": "https://bandcamp.com/search?q=Yu+Su+Foundry",
+            "soundcloud": "https://soundcloud.com/search?q=Yu+Su+Foundry",
+            "apple": "https://music.apple.com/de/search?term=Yu+Su+Foundry"
+        }
+    },
+    {
+        "id": "Nondi_ / Hider??? [2026]",
+        "artist": "Nondi_",
+        "album": "Hider???",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-23283362.jpg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Electronic",
+            "Experimental",
+            "Footwork",
+            "IDM",
+            "Juke"
+        ],
+        "detail_url": "https://nodata.tv/197497",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Nondi_+Hider%3F%3F%3F",
+            "bandcamp": "https://bandcamp.com/search?q=Nondi_+Hider%3F%3F%3F",
+            "soundcloud": "https://soundcloud.com/search?q=Nondi_+Hider%3F%3F%3F",
+            "apple": "https://music.apple.com/de/search?term=Nondi_+Hider%3F%3F%3F"
+        }
+    },
+    {
+        "id": "Mark Broom / Touch [2026]",
+        "artist": "Mark Broom",
+        "album": "Touch",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-5553812.jpg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Electronic",
+            "House",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197477",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Mark+Broom+Touch",
+            "bandcamp": "https://bandcamp.com/search?q=Mark+Broom+Touch",
+            "soundcloud": "https://soundcloud.com/search?q=Mark+Broom+Touch",
+            "apple": "https://music.apple.com/de/search?term=Mark+Broom+Touch"
+        }
+    },
+    {
+        "id": "Loraine James / Detached From The Rest Of You [2026]",
+        "artist": "Loraine James",
+        "album": "Detached From The Rest Of You",
+        "image": "https://nodata.tv/wp-content/uploads/2026/05/R-51138244.jpg",
+        "date_found": "2026-05-10",
+        "genres": [
+            "Ambient",
+            "Electronic",
+            "Experimental",
+            "IDM",
+            "Techno"
+        ],
+        "detail_url": "https://nodata.tv/197501",
+        "links": {
+            "youtube": "https://www.youtube.com/results?search_query=Loraine+James+Detached+From+The+Rest+Of+You",
+            "bandcamp": "https://bandcamp.com/search?q=Loraine+James+Detached+From+The+Rest+Of+You",
+            "soundcloud": "https://soundcloud.com/search?q=Loraine+James+Detached+From+The+Rest+Of+You",
+            "apple": "https://music.apple.com/de/search?term=Loraine+James+Detached+From+The+Rest+Of+You"
+        }
+    },
+    {
         "id": "Leroi Conroy / A Tiger’s Tale [2025]",
         "artist": "Leroi Conroy",
         "album": "A Tiger’s Tale",
